@@ -90,9 +90,9 @@ function App() {
     setLoading(true);
     fetchData();
     if (
-      window.location.href.includes("http://localhost:3000/login") ||
-      window.location.href.includes("http://localhost:3000/board") ||
-      window.location.href.includes("http://localhost:3000/dashboard")
+      window.location.href.includes("https://loquacious-churros-de12d3.netlify.app/login") ||
+      window.location.href.includes("https://loquacious-churros-de12d3.netlify.app/board") ||
+      window.location.href.includes("https://loquacious-churros-de12d3.netlify.app/dashboard")
     ) {
       setLogin(true);
       setSkip(true);
@@ -123,7 +123,7 @@ function App() {
           </div>
         ) : (
           <Router>
-            {window.location.href.includes("http://localhost:3000/board") ? (
+            {window.location.href.includes("https://loquacious-churros-de12d3.netlify.app/board") ? (
               <DashNav setExit={setExit} />
             ) : (
               <React.Fragment>
@@ -307,7 +307,7 @@ function App() {
                   />
                 </React.Fragment>
                  : window.location.href.includes(
-                "http://localhost:3000/dashboard" ) ? (
+                "https://loquacious-churros-de12d3.netlify.app/dashboard" ) ? (
                 <Route
                   path="/dashboard"
                   element={
