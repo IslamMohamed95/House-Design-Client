@@ -1,8 +1,7 @@
 .App {
   min-height: 100vh;
+  position: relative;
 }
-
-/*------------- Spinner ------------*/
 #square1 {
   display: block;
   position: absolute;
@@ -12,7 +11,6 @@
   width: 50px;
   margin: -25px 0 0 -25px;
 }
-
 #square1 span {
   width: 16px;
   height: 16px;
@@ -21,31 +19,26 @@
   -webkit-animation: square1 1.7s infinite ease-in-out both;
   animation: square1 1.7s infinite ease-in-out both;
 }
-
 #square1 span:nth-child(1) {
   left: 0px;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
-
 #square1 span:nth-child(2) {
   left: 15px;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-
 #square1 span:nth-child(3) {
   left: 30px;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
-
 #square1 span:nth-child(4) {
   left: 45px;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-
 @keyframes square1 {
   0%,
   80%,

@@ -6,9 +6,9 @@ nav {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  -align-items: center;
+  align-items: center;
   padding: 1% 1.5%;
-  z-index: 100;
+  z-index: 50;
 }
 
 nav .logoData a {
@@ -121,13 +121,13 @@ nav .logoData a {
   position: absolute;
   display: flex;
   height: 0;
-  right: 3%;
+  right: 2%;
   padding: 0% !important;
   visibility: hidden;
   flex-direction: column;
   text-align: center;
   overflow: hidden;
-  top: 55% !important;
+  top: 65% !important;
   list-style: none;
   z-index: 1;
   background-color: rgba(231, 231, 231, 0.7);
@@ -141,30 +141,26 @@ nav .logoData a {
 }
 
 #Nav .mobNav {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   list-style: none;
-  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.9);
-  right: -70%;
+  transform: translateX(100%);
   transition: all 0.4s ease-in-out;
 }
 
-.activeList {
-  transform: translateX(0) !important;
-  border-radius: unset !important;
-  right: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
+.activeMobNav {
+  transform: translateX(0%) !important;
 }
 
 .mobNav li {
-  margin: 15% 0;
+  margin: 10px 0;
+  white-space: nowrap;
 }
 
 .mobContainer {
@@ -190,7 +186,7 @@ nav .logoData a {
   list-style: none;
   position: absolute;
   text-align: center;
-  top: 61%;
+  top: 63.2%;
   height: 0;
   overflow: hidden;
   right: 35%;
@@ -343,8 +339,15 @@ ul li p {
   margin: 0;
 }
 
-#Nav ul a {
+#Nav ul a,
+.mobNav a {
   text-decoration: none;
+}
+.mobNav a {
+  color: black;
+  font-weight: bold;
+  margin: 2px 0 !important;
+  font-size: 20px;
 }
 
 #Nav .link {

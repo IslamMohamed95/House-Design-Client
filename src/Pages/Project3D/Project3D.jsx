@@ -1,10 +1,6 @@
 import React, { useEffect } from "react";
 import "./Project3D.css";
-
-// import H_img5 from "../../assets/Home Images/img5.jpg";
 import { useTranslation } from "react-i18next";
-
-//import images
 import img1 from "../../assets/3D/img1.jpeg";
 import img2 from "../../assets/3D/img2.jpeg";
 import img3 from "../../assets/3D/img3.jpeg";
@@ -26,7 +22,6 @@ import img18 from "../../assets/3D/img18.jpeg";
 import img19 from "../../assets/3D/img19.jpeg";
 import img20 from "../../assets/3D/img20.jpeg";
 import Footer from "../Footer/Footer";
-
 function Project3D() {
   const { t } = useTranslation();
   let images = [
@@ -51,22 +46,18 @@ function Project3D() {
     img19,
     img20,
   ];
-
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-
   return (
     <section id="Designs">
       <h1>{t("Designs.headLine")}</h1>
       <div className="black">
         <div className="red"></div>
       </div>
-      <h4>3D-Designs</h4>
-
+      <h4>{t("Designs.subHeadLine")}</h4>
       <div className="row">
         {images.map((img) => {
-          console.log(img);
           return (
             <img
               src={img}
@@ -78,10 +69,8 @@ function Project3D() {
           );
         })}
       </div>
-
       <Footer />
     </section>
   );
 }
-
 export default Project3D;

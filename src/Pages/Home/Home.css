@@ -5,12 +5,6 @@
 #Home {
   width: 100%;
   min-height: 100vh !important;
-  position: relative;
-}
-
-#Images img {
-  width: 100%;
-  height: 100vh;
 }
 
 .shadow {
@@ -68,7 +62,6 @@
   }
 }
 
-/*--------------Profile Data ----------*/
 #second {
   margin: 6% 0 20%;
   display: flex;
@@ -134,7 +127,7 @@
   text-align: center;
   position: relative;
   width: 35%;
-  background-color: rgba(199, 199, 199, 0.7);
+  background-color: rgb(219, 219, 219);
   border-top-left-radius: unset;
   border-top-right-radius: 5px;
 }
@@ -157,7 +150,7 @@
 }
 #second .profile > div i {
   color: red;
-  font-weight: light;
+  margin-right: 10px;
   animation: profile 0.3s linear 0s infinite alternate;
 }
 @keyframes profile {
@@ -175,9 +168,6 @@
   background-color: black;
 }
 
-/*----------------------------------------------------*/
-
-/*------------- What We Do ---------------*/
 .Job {
   padding: 5% 0 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -261,9 +251,7 @@
 .Job .categ:hover img {
   transform: scale(1.5);
 }
-/*----------------------------------------*/
 
-/*------------------- Modules --------------------*/
 #Home .module {
   padding: 10% 0 0;
   display: flex;
@@ -364,9 +352,7 @@
   word-wrap: unset;
   word-break: keep-all;
 }
-/*------------------------------------------------*/
 
-/*-------------------- Projects -------------------*/
 .building {
   margin-bottom: 6%;
   padding: 2% 0;
@@ -418,8 +404,33 @@
 .building > div > div {
   text-align: center;
 }
+
 .building > div > div a {
   text-decoration: none;
+}
+
+.building > div > div:nth-child(2) a .fa-place-of-worship {
+  font-size: 4em;
+}
+
+.building > div > div:nth-child(1) a .fa-place-of-worship,
+.building > div > div:nth-child(2) a .fa-place-of-worship,
+.building > div > div:nth-child(3) a .fa-place-of-worship {
+  color: rgb(54, 54, 54);
+}
+
+.building > div > div:nth-child(1) a .fa-place-of-worship,
+.building > div > div:nth-child(3) a .fa-place-of-worship {
+  font-size: 3em;
+}
+
+.building > div > div:nth-child(1) a h6,
+.building > div > div:nth-child(3) a h6 {
+  color: black !important;
+}
+
+.building > div > div:nth-child(2) a h6 {
+  color: black;
 }
 .building > div > div p {
   color: rgba(255, 0, 0, 0.5);
@@ -444,9 +455,6 @@
     transform: translateX(0);
   }
 }
-/*-------------------------------------------------*/
-
-/*------------------ Contact Us -------------------*/
 #Home .Contact {
   padding: 8% 0;
   background-color: rgba(105, 105, 105, 0.19);
@@ -507,7 +515,8 @@
   border: none;
   border-radius: 5px;
   width: 65%;
-  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 #Home .Contact form button {
   width: 90px;
@@ -547,20 +556,12 @@
   font-size: 16px;
 }
 
-/* #Home .Contact form div > div {
-  background-color: orange;
-} */
-/*-------------------------------------------------*/
-
-/*------------------ Location ---------------------*/
 #Home .loc {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/*-------------------------------------------------*/
 
 #shadow {
   position: absolute;
@@ -622,6 +623,10 @@
 .CoData h5 {
   font-weight: bold;
   font-size: 16px;
+}
+
+.CoData .loca {
+  color: rgb(241, 141, 141);
 }
 
 .location {

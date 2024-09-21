@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import "./Company.css";
@@ -10,7 +10,7 @@ import S_img5 from "../../assets/CompanyProfile/Steel 5.jpeg";
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 
-function Company({ call, profile, setProfile }) {
+function Company({ call, profile, setProfile, setCall }) {
   const { t } = useTranslation();
   const callRef = useRef(null);
 
@@ -21,18 +21,18 @@ function Company({ call, profile, setProfile }) {
   var Eval = [
     {
       Icon: <i className="fa-solid fa-heart"></i>,
-      Rate: 80,
-      Desc: "Interactions",
+      Rate: 95,
+      Desc: t("Company.interaction.Desc.1"),
     },
     {
       Icon: <i className="fa-solid fa-face-smile"></i>,
-      Rate: 70,
-      Desc: "Satisfaction",
+      Rate: 90,
+      Desc: t("Company.interaction.Desc.2"),
     },
     {
       Icon: <i className="fa-solid fa-building-shield"></i>,
       Rate: 100,
-      Desc: "Safety",
+      Desc: t("Company.interaction.Desc.3"),
     },
   ];
 
@@ -58,16 +58,18 @@ function Company({ call, profile, setProfile }) {
 
   useEffect(() => {
     if (profile) {
-      setProfile(false);
       window.scrollTo(0, 0);
+      setProfile(false);
+      setCall(false);
+    } else if (call) {
+      setProfile(false);
+      callRef.current.scrollIntoView();
     }
+
     progressBar = document.querySelectorAll(".progress-cont");
     valueContainer = document.querySelectorAll(".counter");
 
     valueContainer.forEach((v, i) => startCount(v, i));
-    if (call) {
-      callRef.current.scrollIntoView({ behavior: "smooth" });
-    }
   });
 
   return (
@@ -173,11 +175,6 @@ function Company({ call, profile, setProfile }) {
               );
             })}
           </div>
-          <ul className="headLines d-none d-md-flex">
-            <li>Safety</li>
-            <li>Satisfaction</li>
-            <li>Likes</li>
-          </ul>
         </div>
 
         <div className="Loc display">
@@ -195,15 +192,19 @@ function Company({ call, profile, setProfile }) {
       </div>
 
       <div
-        ref={callRef}
         className={t("NavBar.lang") === "Arabic" ? "Owners Dir" : "Owners"}
+        ref={callRef}
       >
-        <div>
+        <h2>{t("Company.contact")}</h2>
+        <div className="black">
+          <div className="red"></div>
+        </div>
+        <div className="d-flex flex-md-row flex-column justify-content-between align-items-center ">
           <div className="CEO ">
             <div>
               <p>{t("Company.Contact.departments.dp1")}</p>
               <div className="salesDep d-flex flex-column">
-                <a href="tel:0565533221">0565533221</a>
+                <a href="tel:0568320000">0568320000</a>
                 <p>{t("Company.Contact.guide")}</p>
               </div>
             </div>
@@ -213,8 +214,10 @@ function Company({ call, profile, setProfile }) {
             <div>
               <p>{t("Company.Contact.departments.dp2")}</p>
               <div className="salesDep d-flex flex-column">
-                {/* <a href="tel:0503221702">0503221702</a> */}
                 <a href="tel:0503221792">0503221792</a>
+                <a href="tel:0503221702">0503221702</a>
+                <a href="tel:0502820927">0502820927</a>
+                <a href="tel:0565533221">0565533221</a>
                 <p>{t("Company.Contact.guide")}</p>
               </div>
             </div>
@@ -224,7 +227,7 @@ function Company({ call, profile, setProfile }) {
             <div>
               <p>{t("Company.Contact.departments.dp3")}</p>
               <div className="salesDep d-flex flex-column align-items-center">
-                <a href="tel:0549994316 ">0549994316</a>
+                <a href="tel:0502183060 ">0502183060</a>
                 <p>{t("Company.Contact.guide")}</p>
               </div>
             </div>
@@ -233,7 +236,10 @@ function Company({ call, profile, setProfile }) {
           <div className="CEO ">
             <div>
               <p>{t("Company.Contact.departments.dp4")}</p>
-              <a>037613960</a>
+              <div className="salesDep d-flex flex-column align-items-center">
+                <a>037613960</a>
+                <p>{t("Company.Contact.guide")}</p>
+              </div>
             </div>
           </div>
         </div>

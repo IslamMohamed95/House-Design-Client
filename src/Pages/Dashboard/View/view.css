@@ -1,0 +1,480 @@
+#view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 70px;
+  background-color: rgb(102, 154, 250);
+  min-height: 100vh;
+}
+
+#view > div {
+  padding-bottom: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  transform: translateY(55px);
+  width: 95%;
+  min-height: 91.5vh;
+  overflow: scroll;
+}
+
+#view > div > div:first-child {
+  padding: 8px 0 8px 10px;
+  background-color: rgb(236, 236, 236);
+}
+
+#view > div > div:first-child h4 {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+}
+
+#view > div > div:first-child p {
+  color: rgb(196, 196, 196);
+  font-weight: bold;
+  margin: 0;
+}
+
+#view > div > div:nth-child(2) {
+  width: 95%;
+}
+
+#view > div > div:nth-child(2) button {
+  margin: 15px 0 0 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(102, 154, 250);
+  color: white;
+  font-size: 18px;
+  width: 110px;
+  padding: 5px 0;
+  opacity: 1;
+
+  transition: all 0.4s ease-in-out;
+}
+
+#view > div > div:nth-child(2) button i {
+  margin-right: 5px;
+}
+
+#view .cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#view .mainCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 95%;
+  background-color: rgb(216, 216, 216);
+  padding: 25px 15px;
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+#view .mainCont > div:first-child {
+  transition: all 0.4s ease-in-out;
+  transform: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.activeEdit {
+  transform: translateX(-120%) !important;
+}
+
+#view .mainCont > div > div > div {
+  display: flex;
+  justify-content: center;
+}
+
+#view .mainCont > div > div > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#view .mainCont > div > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+#view .mainCont > div > div > div:last-child input {
+  width: 97.5%;
+}
+
+#view .mainCont > div > div > div input {
+  width: 95%;
+}
+
+#view .mainCont .perform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#view .mainCont .perform > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#view .mainCont .perform > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#view .mainCont .perform > div > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#view .mainCont .perform > div > div:first-child > div {
+  width: 85%;
+}
+
+#view .mainCont .perform > div > div:first-child > div input {
+  width: 100%;
+}
+
+#view label {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+#view input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#view .performance {
+  transform: translateX(-10px);
+  width: 30%;
+}
+
+#view .edit {
+  display: flex;
+  flex-direction: row !important;
+}
+
+#view .edit button {
+  margin: 15px 10px 0 10px;
+  background-color: rgb(143, 143, 143);
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  padding: 3px 0;
+  width: 100px;
+  font-size: 18px;
+}
+
+#view .edit button:last-child {
+  background-color: rgb(252, 115, 115);
+}
+
+#view .loc {
+  text-transform: capitalize;
+  position: absolute;
+  font-size: 22px;
+  top: -10px;
+  color: rgb(155, 155, 155);
+}
+
+#view .update {
+  width: 95%;
+  text-align: right;
+  margin: 0;
+  font-size: 18px;
+  transform: translate(10px, -15px);
+  color: rgb(165, 165, 165);
+}
+
+#view .editForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#view .editForm {
+  transform: translateX(100%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.activeEditForm {
+  transform: translateX(0%) !important;
+}
+
+#view .editForm > div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+#view .editForm > div input,
+#view .editForm > div select {
+  outline: none;
+  text-align: center;
+  width: 100% !important;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 0;
+}
+
+#view .editForm > div:last-child {
+  margin-top: 20px;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#view .editForm > div:last-child button {
+  width: 85px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(252, 115, 115);
+}
+
+#view .editForm > div:last-child button:last-child {
+  background-color: rgb(143, 143, 143);
+}
+
+.Dmessage,
+.Emessage {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.7s ease-in-out;
+}
+
+.activeDmessage,
+.activeEmessage {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.Dmessage > div,
+.Emessage > div {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(92, 149, 255);
+}
+
+.Dmessage > div i,
+.Emessage > div i {
+  color: rgb(4, 218, 4);
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.Dmessage > div p,
+.Emessage > div p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+#view .note {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+#view .note textarea {
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  height: 85px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#view .variation {
+  display: flex;
+  margin: 10px 0 5px 0;
+}
+
+#view .variation > div {
+  width: 100% !important;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+#view .variation > div > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#view .variation > div > div label {
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  min-width: 120px;
+  margin: 0;
+  background-color: rgb(143, 143, 143) !important;
+  font-weight: 650;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.activeFile {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+#view .variation > div input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  margin: 0;
+}
+
+#view .variation > div button {
+  padding: 0px !important;
+  background-color: rgb(92, 149, 255);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.cancelFile {
+  background-color: rgb(252, 115, 115) !important;
+}
+
+#view .variations {
+  width: 100%;
+  align-self: flex-start;
+  margin: 10px 0;
+}
+
+#view .variations > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#view .variations > div > div {
+  border-radius: 5px;
+  background-color: white;
+  width: 100% !important;
+  max-height: 150px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: flex-start;
+}
+
+#view .variations > div > div > div {
+  margin: 10px 5px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#view .variations > div i {
+  font-size: 20px;
+  color: rgb(252, 115, 115);
+}
+
+#view .variations > div p {
+  font-size: 13px;
+  margin: 0;
+}
+
+#view > div > div:nth-child(2) > div {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#view > div > div:nth-child(2) > div select {
+  width: 0;
+  overflow: hidden;
+  color: white;
+  font-weight: 650;
+  background-color: rgb(102, 154, 250);
+  border: none;
+  text-align: center;
+
+  margin-right: 10px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.hideFilterButton {
+  width: 0 !important;
+  opacity: 0 !important;
+  padding: 0 !important;
+}
+
+.showFilter {
+  padding: 7px 4px;
+  width: 110px !important;
+  opacity: 1 !important;
+}

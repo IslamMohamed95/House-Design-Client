@@ -1,41 +1,30 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Footer from "../Footer/Footer";
 import "./Home.css";
-import H_img1 from "../../assets/Home Images/h1.png";
-import H_img2 from "../../assets/Home Images/h2.png";
-import H_img3 from "../../assets/Home Images/h3.png";
-import H_img4 from "../../assets/Home Images/h4.png";
 
-// Desktop View
-import img1 from "../../assets/Home Images/h1.jpeg";
-import img2 from "../../assets/Home Images/h2.jpeg";
-import img3 from "../../assets/Home Images/h3.jpeg";
-import img4 from "../../assets/Home Images/h4.jpeg";
-
-//Profile Photo
 import profile from "../../assets/Home Images/img2.jpg";
-import Container from "../../assets/Home Images/Container.png";
 import Designs from "../../assets/Home Images/Designs.jpg";
-import Roof from "../../assets/Home Images/Roof.png";
 
-// import H_img5 from "../../assets/Home Images/img5.jpg";
 import { useTranslation } from "react-i18next";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/bundle";
-
-// import required modules
-import { EffectCube, Pagination, Navigation, Autoplay } from "swiper";
-
-function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
+import StartComp from "../Swiper/StartComp";
+function Home({
+  setFilter,
+  setProfile,
+  setCall,
+  contact,
+  home,
+  setContact,
+  setHome,
+  setSite,
+  setWidth,
+  width,
+}) {
   const { t } = useTranslation();
   const contactRef = useRef(null);
-  const [width, setWidth] = useState(null);
+
   useEffect(() => {
     if (home) {
       window.scrollTo(0, 0);
@@ -49,9 +38,11 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
   useEffect(() => {
     setWidth(window.innerWidth);
     setContact(false);
+    setProfile(false);
     setHome(false);
     setCall(false);
-  }, []);
+    setSite(false);
+  });
 
   return (
     <motion.section
@@ -61,58 +52,7 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
       exit={{ opacity: 0, transition: { duration: 0.7 } }}
     >
       <div id="Images">
-        <Swiper
-          effect={"cube"}
-          grabCursor={true}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          speed={1500}
-          cubeEffect={{
-            shadow: true,
-            slideShadows: true,
-            shadowOffset: 20,
-            shadowScale: 0.94,
-          }}
-          pagination={false}
-          navigation={false}
-          modules={[EffectCube, Pagination, Navigation, Autoplay]}
-          className="mySwiper swiper-container"
-        >
-          {width >= 768 ? (
-            <React.Fragment>
-              <SwiperSlide className="wrapper">
-                <img src={img1} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide className="wrapper">
-                <img src={img2} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide className="wrapper">
-                <img src={img3} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide className="wrapper">
-                <img src={img4} alt="img" />
-              </SwiperSlide>
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              <SwiperSlide>
-                <img src={H_img1} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={H_img2} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={H_img3} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={H_img4} alt="img" />
-              </SwiperSlide>
-            </React.Fragment>
-          )}
-        </Swiper>
+        <StartComp width={width} />
         <motion.a
           href="#second"
           className="iconDown"
@@ -155,11 +95,16 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
             </p>
             <div className="profile">
               <div>
-                <a href="/profile">
+                <Link
+                  to="/profile"
+                  onClick={() => {
+                    setProfile(true);
+                  }}
+                >
                   <p>
                     Profile <i className="fa-solid fa-angles-right"></i>
                   </p>
-                </a>
+                </Link>
               </div>
               <img src={profile} alt="profile" />
             </div>
@@ -172,17 +117,16 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
             </div>
             <p className="arabPara">
               شركة هاوس ديزاين للبناء الجاهز هي شركة مقرها مدينة العيـــــــن و
-              تضم نخبة من المهندسين و المصممين المحترفين من الذين تجاوزت خبراتهم
-              العملي تسعة أعوام في توريـــــــد و تركيب البنــــاء الجاهز و
-              الوحدات السكنية ذات الجودة العالية .يقتصر نطاق عمـــل الشركة في
-              مدينة دبي والشارقة وعجمان و أبوظبي و المناطق التابعة لها منطقة
-              العين و الظفرة
+              تضم نخبة من المهندسين و المصممين المحترفين منذ عام 2006 في
+              توريـــــــد و تركيب البنــــاء الجاهز و الوحدات السكنية ذات
+              الجودة العالية .يقتصر نطاق عمـــل الشركة في مدينة دبي والشارقة
+              وعجمان و أبوظبي و المناطق التابعة لها منطقة العين و الظفرة
             </p>
             <div className="profile">
               <div className={t("NavBar.lang") === "Arabic" ? "Arabic" : ""}>
-                <Link to="/profile">
+                <Link to="/profile" onClick={() => setProfile(true)}>
                   <p>
-                    {t("Home.profile")}{" "}
+                    {t("Home.profile")}
                     {t("NavBar.lang") === "Arabic" ? (
                       <i className="fa-solid fa-angles-left"></i>
                     ) : (
@@ -210,11 +154,6 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
             <Link to="/designs">
               <p>{t("Home.container")}</p>
             </Link>
-          </div>
-          <div className="categ" id="roof">
-            <div className="shadow"></div>
-            <img src={Roof} alt="Roof" />
-            <p className="roof">{t("Home.roof")}</p>
           </div>
         </div>
       </div>
@@ -275,9 +214,9 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
         </div>
         <div>
           <div>
-            <i className="fa-solid fa-place-of-worship"></i>
-            <h6>{t("Home.country.1")}</h6>
             <Link to="/projects" onClick={() => setFilter(1)}>
+              <i className="fa-solid fa-place-of-worship"></i>
+              <h6>{t("Home.country.1")}</h6>
               <p>
                 {t("Home.details")} <i className="fa-solid fa-caret-right"></i>
               </p>
@@ -285,9 +224,10 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
           </div>
 
           <div>
-            <i className="fa-solid fa-place-of-worship"></i>
-            <h6>{t("Home.country.2")}</h6>
             <Link to="/projects" onClick={() => setFilter(0)}>
+              <i className="fa-solid fa-place-of-worship"></i>
+              <h6>{t("Home.country.2")}</h6>
+
               <p>
                 {t("Home.details")} <i className="fa-solid fa-caret-right"></i>
               </p>
@@ -295,9 +235,9 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
           </div>
 
           <div>
-            <i className="fa-solid fa-place-of-worship"></i>
-            <h6>{t("Home.country.3")}</h6>
             <Link to="/projects" onClick={() => setFilter(2)}>
+              <i className="fa-solid fa-place-of-worship"></i>
+              <h6>{t("Home.country.3")}</h6>
               <p>
                 {t("Home.details")} <i className="fa-solid fa-caret-right"></i>
               </p>
@@ -363,37 +303,10 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
         <div className="col-6 col-md-3">
           <h5>{t("Home.links.1.1")}</h5>
           <ul className="mt-2">
-            <Link to="#">
-              <li>&#8250; {t("Home.links.1.2")}</li>
-            </Link>
             <Link to="/designs">
               <li>&#8250; {t("Home.links.1.3")}</li>
             </Link>
           </ul>
-        </div>
-
-        <div className="col-6 col-md-3">
-          <h5>{t("Home.links.2.1")}</h5>
-          <ul className="mt-2">
-            <Link href="#">
-              <li>&#8250; {t("Home.links.2.2")}</li>
-            </Link>
-
-            <Link to="/projects">
-              <li>&#8250; {t("Home.links.2.3")}</li>
-            </Link>
-          </ul>
-        </div>
-
-        <div className="col-6 col-md-3 ">
-          <h5>{t("Home.links.3.1")}</h5>
-          <p className="location mt-2">
-            {t("Home.links.3.2.1")}
-            <br />
-            {t("Home.links.3.2.2")}
-            <br />
-            {t("Home.links.3.2.3")}
-          </p>
         </div>
 
         <div className="col-6 col-md-3">
@@ -418,7 +331,21 @@ function Home({ setFilter, setCall, contact, home, setContact, setHome }) {
               <span className="text-dark"> {t("Home.links.4.2")}</span>
             </Link>
           </div>
-          <h5 className="mt-3 mb-2"> {t("Home.links.5.1")}</h5>
+        </div>
+
+        <div className="col-6 col-md-3">
+          <h5>{t("Home.links.3.1")}</h5>
+          <p className="mt-2 loca">
+            <span>{t("Home.links.3.2.1")}</span>
+            <br />
+            <span>{t("Home.links.3.2.2")}</span>
+            <br />
+            <span>{t("Home.links.3.2.3")}</span>
+          </p>
+        </div>
+
+        <div className="col-6 col-md-3">
+          <h5 className="mb-2"> {t("Home.links.5.1")}</h5>
 
           <div className="icons">
             <a href="https://www.facebook.com/housed.ae">

@@ -1,0 +1,113 @@
+#dashNav {
+  z-index: 50;
+}
+
+#dashNav a {
+  text-decoration: none;
+}
+#dashNav > div:first-child {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px 15px;
+}
+#dashNav > div:first-child h6 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 22px;
+  color: white;
+}
+
+#dashNav > div:first-child h6 span {
+  color: red;
+}
+
+#dashNav > div:nth-child(2) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+
+  height: 100%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeUl {
+  width: 80px !important;
+}
+
+#dashNav > div:nth-child(2) ul {
+  background-color: rgba(102, 154, 250, 0.8);
+  position: absolute;
+  padding: 90px 0 0 0;
+  top: 0;
+  right: 0;
+  margin: 0;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+#dashNav > div:nth-child(2) ul li {
+  color: white;
+  font-size: 18px;
+  margin: 0 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+#dashNav > div:nth-child(2) ul a {
+  text-decoration: none;
+}
+
+#dashNav > div:nth-child(2) ul li i {
+  font-size: 20px;
+  margin-right: 7px;
+  color: white;
+}
+
+#dashNav > div:first-child > div {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 40px;
+  height: 30px;
+}
+
+#dashNav > div:first-child > div > div:nth-child(2),
+#dashNav > div:first-child > div > div:nth-child(1),
+#dashNav > div:first-child > div > div:nth-child(3) {
+  height: 3px;
+  background-color: white;
+}
+#dashNav > div:first-child > div > div:nth-child(3) {
+  transform: translateY(9px);
+}
+#dashNav > div:first-child > div > div:nth-child(1) {
+  transform: translateY(-9px);
+}
+#dashNav > div:first-child > div > div:nth-child(3),
+#dashNav > div:first-child > div > div:nth-child(1) {
+  width: 40%;
+  transition: all 0.3s ease-in-out;
+}
+
+#dashNav > div:first-child > div > div:nth-child(2) {
+  width: 70%;
+  transition: all 0.3s ease-in-out;
+}

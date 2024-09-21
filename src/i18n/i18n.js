@@ -11,22 +11,103 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
+    lng: "ar",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
     resources: {
       en: {
         translation: {
+          Contract: {
+            select: {
+              client: "New",
+            },
+            titles: {
+              personal: "Client Details",
+              contract: "Contract Details",
+            },
+            labels: {
+              code: "Code",
+              email: "Email",
+              password: "Password",
+              name: "Name",
+              mobile: "Mobile",
+              location: "Location",
+              assignDate: "Assign Date",
+              start: "Start",
+              end: "End",
+              status: "Status",
+              stage: "Stage",
+              cost: "Total Cost",
+              stageCost: "Stage cost",
+              variation: "Variation",
+              download: "Download",
+              owner: "Salesman",
+            },
+            btns: {
+              delete: "Delete",
+              edit: "Edit",
+              add: "Add",
+              addVariation: "Add",
+              cancelvariation: "Cancel",
+            },
+            cities: {
+              1: "Abu Dhabi",
+              2: "Al Ain",
+              3: "Liwa",
+              4: "Dubai",
+              5: "Sharjah",
+              6: "Ajman",
+              7: "Umm Al Quawin",
+              8: "Ras Al Khaimah",
+              9: "Fujairah",
+              10: "Dhafra",
+            },
+            sales: {
+              name: "Name",
+              monthly_target: "Monthly Target",
+            },
+          },
+          Administrator: {
+            labels: {
+              name: "Name",
+              target: "Target",
+            },
+            btns: {
+              add: "Add",
+              cancel: "Cancel",
+            },
+          },
+          Login: {
+            para: "Pleas Enter the details below to continue",
+            title: "Login Now!",
+            username: "username",
+            password: "password",
+            btn: "Login",
+            err: "wrong email or password!",
+            type1: "Admin Login?",
+            type2: "Client Login?",
+          },
+          Question: {
+            q1: "Agree",
+            q2: "Login",
+            submit: "Submit",
+            back: "Back",
+            skip: "Maybe later!",
+            title:
+              "Someone from sales department will contact you for more details",
+            error: "pleas enter valid country code",
+          },
           Logo: {
             name1: "House",
             name2: "Design",
             field: "Prefab. construction",
           },
-          // here we will place our translations...
+
           NavBar: {
             lang: "English",
-            city: "UAE",
-            contact: "Contact",
+            city: "Language",
+            contact: "Call us",
           },
           Home: {
             country: { 1: "Abu Dhabi", 2: "Al Ain", 3: "Dubai" },
@@ -43,7 +124,7 @@ i18n
               " To ensure long term durability, the modular process utilizes robust building materials that aid in sound insulation, fire proofing and energy preservation. All to ensure that your desired structure is built to last.",
             modular: "Prefabricated Modules",
             smallTitle: "Why Us ?",
-            container: "Extension",
+            container: "3D Designs",
             roof: "Roof",
             job: "What We Do",
             typeWriter: {
@@ -55,7 +136,7 @@ i18n
             sites: "Sites",
             services: "Services",
             home: "Home",
-            call: "Contact",
+            call: "Call Us",
             intro: "",
             view: {
               1: "Best Quality",
@@ -66,7 +147,7 @@ i18n
               1: {
                 1: "Designs & Schemas",
                 2: "Schemas",
-                3: "3D",
+                3: "3D Designs",
               },
               2: {
                 1: "Company",
@@ -78,11 +159,11 @@ i18n
                 2: {
                   1: "Al Ain, Oud Altouba, Al bin Taleb St",
                   2: "Building 3 beside ADCB Bank",
-                  3: "Floor 2, Office(2)",
+                  3: "Floor 2, Office(12)",
                 },
               },
               4: {
-                1: "Contact",
+                1: "Call Us",
                 2: "Get in touch",
               },
               5: {
@@ -146,16 +227,32 @@ i18n
                 Area: "143",
                 Desc: "Majles + Bathroom & Washrooms + Family Hall",
               },
+              11: {
+                Loc: "Dubai",
+                Area: "138",
+                Desc: "Majles + Lobby + 2 Master bedrooms",
+              },
+              12: {
+                Loc: "Dubai",
+                Area: "203",
+                Desc: "Majles + Bathroom & Washrooms + Family Hall + 2 bedrooms + Master bedroom + kitchen",
+              },
+              13: {
+                Loc: "Dubai",
+                Area: "175",
+                Desc: "Family Hall + 2 master bedrooms + Store + Kitchen",
+              },
             },
             back: {
               1: "Back",
             },
           },
           Company: {
+            contact: "Call Us",
             intro: {
               title: "Who We Are",
               intro:
-                "House Design Company for prefabricated construction is a company based in the city of Al Ain and includes a group of professional engineers and designers whose practical experience exceeded nine years in the supply and installation of prefabricated construction and high quality housing units. and the western region",
+                "House Design Company for prefabricated construction is a company based in Al Ain and includes a group of professional engineers and designers since 2006 in the supply and installation of prefabricated buildings and high quality residential units. The scope of the company's work is limited to the city of Dubai, Sharjah, Ajman, Abu Dhabi and its affiliated regions. Al Ain and Al Dhafra",
             },
             question: {
               ques: "Prefab construction",
@@ -183,6 +280,14 @@ i18n
               steel: "Steel",
               dye: "Dye",
             },
+
+            interaction: {
+              Desc: {
+                1: "Interactions",
+                2: "Satisfaction",
+                3: "Safety",
+              },
+            },
           },
 
           Contact: {
@@ -195,11 +300,33 @@ i18n
 
           Designs: {
             headLine: "Designs",
+            subHeadLine: "3D-Designs",
           },
         },
       },
       ar: {
         translation: {
+          Login: {
+            para: "من فضلك قم بإدخال جميع البيانات للإستمرار",
+            title: "دخول عملاء الشركة",
+            title2: "لمتابعة حالة المشروع",
+            title3: " دخول عملاء الشركة لمتابعة حالة المشروع",
+            username: "اسم المستخدم",
+            password: "كلمة المرور",
+            btn: "دخول",
+            err: "خطأ بإسم المستخدم او كلمة السر",
+            type1: "دخول مسؤول النظام؟",
+            type2: "دخول العميل؟",
+          },
+          Question: {
+            q1: "موافق",
+            q2: "تسجيل دخول",
+            submit: "متابعة",
+            back: "عودة",
+            skip: "لاحقا",
+            title: "سيقوم أحد من فريق المبيعات بالتواصل معك لمزيد من التفاصيل",
+            error: "كود المنطقة غير صحيح",
+          },
           Logo: {
             name1: "هاوس",
             name2: "ديزاين",
@@ -207,8 +334,8 @@ i18n
           },
           NavBar: {
             lang: "Arabic",
-            city: "الإمارات",
-            contact: "للتواصل",
+            city: "اللغة",
+            contact: "اتصل بنا",
           },
           Home: {
             country: { 1: "أبو ظبي", 2: "مدينة العين", 3: "دبي" },
@@ -226,19 +353,19 @@ i18n
             modular: "البناء الجاهز",
             smallTitle: "لماذا نحن ؟ ",
             roof: "سقفيات",
-            container: "مجالس",
+            container: "تصاميم قابلة للتنفيذ",
             job: "الأعمال",
             typeWriter: {
               1: "قم بتصميم منزلك",
-              2: "أحدث التصميمات",
-              3: "جودة أعلي",
+              2: "أحدث التصاميم",
+              3: "جودة أعلى",
             },
             profile: "نبذة",
             sites: "المشاريع",
             services: "الخدمات",
             home: "الصفحة الرئيسية",
             intro: "",
-            call: "للتواصل",
+            call: "اتصل بنا",
             view: {
               1: "جودة أعلي",
               2: "تصميمات عصرية",
@@ -248,7 +375,7 @@ i18n
               1: {
                 1: "تصميمات ومخططات",
                 2: "مخططات",
-                3: "3D",
+                3: "تصميمات جرافيكية",
               },
               2: {
                 1: "هاوس ديزاين",
@@ -259,13 +386,13 @@ i18n
                 1: "الموقع",
                 2: {
                   1: "العين ، عود التوبة ، شارع بن طالب",
-                  2: "مبنى 3 بجوار بنك أبوظبي التجاري                  ",
-                  3: "الطابق 2، مكتب (2)",
+                  2: "مبنى 3 بجوار مصرف أبوظبي الإسلامي",
+                  3: "الطابق 2، مكتب (12)",
                 },
               },
               4: {
                 1: "للدعم الفني",
-                2: "تواصل",
+                2: "اتصل بنا",
               },
               5: {
                 1: "قم بمتابعتنا علي",
@@ -328,12 +455,28 @@ i18n
                 Area: "143",
                 Desc: "مجلس + حمام ومغاسل + صالة طعام",
               },
+              11: {
+                Loc: "دبي",
+                Area: "138",
+                Desc: "مجلس + غرفتين نوم ماستر + صالة طعام",
+              },
+              12: {
+                Loc: "دبي",
+                Area: "203",
+                Desc: "مجلس + حمام ومغاسل +  غرفتين نوم + غرفة منوم ماستر + مطبخ تحضيري",
+              },
+              13: {
+                Loc: "دبي",
+                Area: "175",
+                Desc: "مجلس + حمام ومغاسل +  مطبخ تحضيري + غرفتين ماستر",
+              },
             },
             back: {
               1: "عودة",
             },
           },
           Company: {
+            contact: "اتصل بنا",
             intro: {
               title: "من نحن",
               intro:
@@ -355,7 +498,7 @@ i18n
               departments: {
                 dp1: "المدير العام",
                 dp2: "قسم المبيعات",
-                dp3: "الدعم الفني",
+                dp3: "القسم الهندسي",
                 dp4: "البدالة",
               },
               guide: "اضغط للاتصال",
@@ -363,6 +506,13 @@ i18n
             material: {
               steel: "الحديد البارد",
               dye: "الصبغة",
+            },
+            interaction: {
+              Desc: {
+                1: "التفاعلات",
+                2: "مستوي رضي العميل",
+                3: "الضمان",
+              },
             },
           },
 
@@ -375,6 +525,7 @@ i18n
           },
           Designs: {
             headLine: "تصميمات",
+            subHeadLine: "تصميمات جرافيكية",
           },
         },
       },

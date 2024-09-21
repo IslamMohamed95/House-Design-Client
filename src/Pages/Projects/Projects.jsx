@@ -73,19 +73,32 @@ import AEZ5 from "../../assets/Projects/Abdallah Elzaaby/5.jpg";
 import Proj9 from "../../assets/Projects/Sief El-Mansory/Proj9.jpg";
 import SELM1 from "../../assets/Projects/Sief El-Mansory/1.jpg";
 import SELM2 from "../../assets/Projects/Sief El-Mansory/2.jpg";
+
+import Proj10 from "../../assets/Projects/Ahmed Bin Ghalita/Proj10.jpg";
+import BNGha1 from "../../assets/Projects/Ahmed Bin Ghalita/1.jpg";
+import BNGha2 from "../../assets/Projects/Ahmed Bin Ghalita/2.jpg";
+
+import Proj11 from "../../assets/Projects/Mohamed Alhemeri/Proj11.jpg";
+import MohElH1 from "../../assets/Projects/Mohamed Alhemeri/1.jpg";
+
+import Proj12 from "../../assets/Projects/Osman Alflasi/Proj12.jpg";
+import OsAlf1 from "../../assets/Projects/Osman Alflasi/1.jpg";
+
 import Footer from "../Footer/Footer";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
-function Projects({ filt, setFilter }) {
+function Projects({ filt, setFilter, setSite, site }) {
   const { t } = useTranslation();
-  const [projNumber, setProjNumber] = useState();
+  const [projNumber, setProjNumber] = useState({ id: null, img_id: null });
   var [imgEle, setImgEle] = useState([]);
 
   var Filters = [t("Home.country.2"), t("Home.country.1"), t("Home.country.3")];
   var projName = [
     {
       id: 0,
+      img_id: 1,
+      interaction: false,
       Pic: Proj1,
       Loc: t("Projects.projectDesc.1.Loc"),
       Area: t("Projects.projectDesc.1.Area"),
@@ -94,6 +107,8 @@ function Projects({ filt, setFilter }) {
 
     {
       id: 1,
+      img_id: 1,
+      interaction: false,
       Pic: Proj2,
       Loc: t("Projects.projectDesc.2.Loc"),
       Area: t("Projects.projectDesc.2.Area"),
@@ -101,6 +116,8 @@ function Projects({ filt, setFilter }) {
     },
     {
       id: 0,
+      img_id: 2,
+      interaction: false,
       Pic: Proj3,
       Loc: t("Projects.projectDesc.3.Loc"),
       Area: t("Projects.projectDesc.3.Area"),
@@ -108,6 +125,8 @@ function Projects({ filt, setFilter }) {
     },
     {
       id: 0,
+      img_id: 3,
+      interaction: false,
       Pic: Proj4,
       Loc: t("Projects.projectDesc.4.Loc"),
       Area: t("Projects.projectDesc.4.Area"),
@@ -115,6 +134,8 @@ function Projects({ filt, setFilter }) {
     },
     {
       id: 1,
+      img_id: 2,
+      interaction: false,
       Pic: Proj5,
       Loc: t("Projects.projectDesc.5.Loc"),
       Area: t("Projects.projectDesc.5.Area"),
@@ -122,12 +143,16 @@ function Projects({ filt, setFilter }) {
     },
     {
       id: 1,
+      img_id: 3,
+      interaction: false,
       Pic: Proj6,
       Loc: t("Projects.projectDesc.6.Loc"),
       Area: t("Projects.projectDesc.6.Area"),
     },
     {
       id: 0,
+      img_id: 4,
+      interaction: false,
       Pic: Proj7,
       Loc: t("Projects.projectDesc.7.Loc"),
       Area: t("Projects.projectDesc.7.Area"),
@@ -135,6 +160,8 @@ function Projects({ filt, setFilter }) {
     },
     {
       id: 1,
+      img_id: 4,
+      interaction: false,
       Pic: Proj8,
       Loc: t("Projects.projectDesc.8.Loc"),
       Area: t("Projects.projectDesc.8.Area"),
@@ -142,6 +169,8 @@ function Projects({ filt, setFilter }) {
     },
     {
       id: 1,
+      img_id: 5,
+      interaction: false,
       Pic: Proj9,
       Loc: t("Projects.projectDesc.9.Loc"),
       Area: t("Projects.projectDesc.9.Area"),
@@ -149,29 +178,76 @@ function Projects({ filt, setFilter }) {
     },
     {
       id: 1,
+      img_id: 6,
+      interaction: false,
       Pic: E1,
       Loc: t("Projects.projectDesc.10.Loc"),
       Area: t("Projects.projectDesc.10.Area"),
       Desc: t("Projects.projectDesc.10.Desc"),
     },
+
+    {
+      id: 2,
+      img_id: 1,
+      interaction: false,
+      Pic: Proj10,
+      Loc: t("Projects.projectDesc.11.Loc"),
+      Area: t("Projects.projectDesc.11.Area"),
+      Desc: t("Projects.projectDesc.11.Desc"),
+    },
+
+    {
+      id: 2,
+      img_id: 2,
+      interaction: false,
+      Pic: Proj11,
+      Loc: t("Projects.projectDesc.12.Loc"),
+      Area: t("Projects.projectDesc.12.Area"),
+      Desc: t("Projects.projectDesc.12.Desc"),
+    },
+    {
+      id: 2,
+      img_id: 3,
+      interaction: false,
+      Pic: Proj12,
+      Loc: t("Projects.projectDesc.13.Loc"),
+      Area: t("Projects.projectDesc.13.Area"),
+      Desc: t("Projects.projectDesc.13.Desc"),
+    },
   ];
   var projPics = [
-    { ME1, ME2, ME3 },
-    { ELM1, ELM2, ELM3, ELM4 },
-    { SH1, SH2, SH3, SH4, SH5, SH6, SH7 },
-    { MEL1, MEL2, MEL3, MEL4, MEL5, MEL6, MEL7, MEL8 },
-    { AEL1, AEL2, AEL3, AEL4, AEL5, AEL6, AEL7 },
-    { HC1, HC2, HC3 },
-    { img1, img2, img3, img4, img5, img6, img7 },
-    { AEZ1, AEZ2, AEZ3, AEZ4, AEZ5 },
-    { SELM1, SELM2 },
-    { E1, E2 },
+    { images: { ME1, ME2, ME3 }, F_id: 0, img_id: 1 },
+    { images: { ELM1, ELM2, ELM3, ELM4 }, F_id: 1, img_id: 1 },
+    { images: { SH1, SH2, SH3, SH4, SH5, SH6, SH7 }, F_id: 0, img_id: 2 },
+    {
+      images: { MEL1, MEL2, MEL3, MEL4, MEL5, MEL6, MEL7 },
+      MEL8,
+      F_id: 0,
+      img_id: 3,
+    },
+    {
+      images: { AEL1, AEL2, AEL3, AEL4, AEL5, AEL6, AEL7 },
+      F_id: 1,
+      img_id: 2,
+    },
+    { images: { HC1, HC2, HC3 }, F_id: 1, img_id: 3 },
+    {
+      images: { img1, img2, img3, img4, img5, img6, img7 },
+      F_id: 0,
+      img_id: 4,
+    },
+    { images: { AEZ1, AEZ2, AEZ3, AEZ4, AEZ5 }, F_id: 1, img_id: 4 },
+    { images: { SELM1, SELM2 }, F_id: 1, img_id: 5 },
+    { images: { E1, E2 }, F_id: 1, img_id: 6 },
+    { images: { BNGha1, BNGha2 }, F_id: 2, img_id: 1 },
+    { images: { MohElH1 }, F_id: 2, img_id: 2 },
+    { images: { OsAlf1 }, F_id: 2, img_id: 3 },
   ];
 
   const [projectDis, setProjectDis] = useState(false);
 
-  const handleEstimate = (e, index) => {
-    if (index === projNumber) {
+  const handleEstimate = (e, Id, ImgId, interaction) => {
+    if (Id === projNumber.id && ImgId === projNumber.img_id) {
       if (e.target.className === "d-none d-md-flex fa-regular fa-heart") {
         e.target.className = "d-none d-md-flex fa-solid fa-heart";
       } else {
@@ -193,13 +269,13 @@ function Projects({ filt, setFilter }) {
     }
   };
 
-  const viewProject = (ind) => {
-    setProjNumber(ind);
+  const viewProject = async (ID, imgID) => {
+    await setProjNumber({ id: ID, img_id: imgID });
     let projcollec = [];
-    projPics.map(async (proj, index) => {
-      if (ind === index) {
-        for (const i in proj) {
-          projcollec.push(proj[i]);
+    projPics.map(async (proj) => {
+      if (proj.F_id === ID && proj.img_id === imgID) {
+        for (const i in proj.images) {
+          projcollec.push(proj.images[i]);
         }
         await setImgEle(projcollec);
       }
@@ -208,9 +284,9 @@ function Projects({ filt, setFilter }) {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    AOS.init();
-    AOS.refresh();
+    if (site) {
+      window.scrollTo(0, 0);
+    }
   });
 
   return (
@@ -244,23 +320,20 @@ function Projects({ filt, setFilter }) {
             .filter((proj) => {
               if (filt === undefined) {
                 return projName;
-              } else if (proj.id === filt) {
-                projName.filter((proj) => {
-                  return proj.id === filt;
-                });
-                return projName;
+              } else {
+                return proj.id === filt;
               }
             })
             .map((proj, i) => {
               return (
-                <motion.div className=" projHolder mb-4 col-2 me-4" key={i}>
+                <motion.div className=" col-12 projHolder mb-4 me-4" key={i}>
                   <img src={proj.Pic} alt="1" />
                   <div>
                     <i
                       className="fa-solid fa-image"
-                      onClick={() => viewProject(i)}
+                      onClick={() => viewProject(proj.id, proj.img_id)}
                     ></i>
-                    <p onClick={() => viewProject(i)}>
+                    <p onClick={() => viewProject(proj.id, proj.img_id)}>
                       {t("Projects.details")}
                     </p>
                   </div>
@@ -290,7 +363,10 @@ function Projects({ filt, setFilter }) {
           </Carousel>
 
           {projName.map((proj, ind) => {
-            if (projNumber === ind) {
+            if (
+              projNumber.id === proj.id &&
+              projNumber.img_id === proj.img_id
+            ) {
               return (
                 <div className="imgData" key={ind}>
                   <div>
@@ -324,7 +400,9 @@ function Projects({ filt, setFilter }) {
                   </button>
                   <i
                     className="d-none d-md-flex fa-regular fa-heart"
-                    onClick={handleEstimate(ind)}
+                    onClick={(e) =>
+                      handleEstimate(e, proj.id, proj.img_id, proj.interaction)
+                    }
                   ></i>
                 </div>
               );

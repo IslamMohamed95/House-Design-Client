@@ -7,28 +7,31 @@ import { t } from "i18next";
 
 import Logo from "../../assets/Logo/Logo.png";
 
-function NavBar({ setChange, setLoading, setContact, setHome, setProfile }) {
+function NavBar({
+  setChange,
+  setLoading,
+  setContact,
+  setHome,
+  setCall,
+  setSite,
+  setProfile,
+  login,
+  activeLang,
+  setActiveLang,
+  setSkip,
+  setLogin,
+}) {
   const Redirectors = [
     {
       data: (
         <Link
-          className="li"
           to="/profile"
-          onClick={() => {
-            setProfile(true);
-          }}
-        >
-          {t("Home.services")}
-        </Link>
-      ),
-    },
-    {
-      data: (
-        <Link
-          to="/"
           className="li"
           onClick={() => {
-            setContact(true);
+            setCall(true);
+            setSite(false);
+            setProfile(false);
+            setContact(false);
             setHome(false);
           }}
         >
@@ -41,17 +44,65 @@ function NavBar({ setChange, setLoading, setContact, setHome, setProfile }) {
         <Link
           to="/projects"
           onClick={() => {
+            setSite(true);
             setContact(false);
             setProfile(false);
+            setHome(false);
+            setCall(false);
           }}
         >
           {t("Home.sites")}
         </Link>
       ),
     },
+    {
+      data: (
+        <Link
+          className="li"
+          to="/profile"
+          onClick={() => {
+            setProfile(true);
+            setSite(false);
+            setHome(false);
+            setContact(false);
+            setCall(false);
+          }}
+        >
+          {t("Home.services")}
+        </Link>
+      ),
+    },
+    {
+      data: (
+        <a
+          href="/login"
+          onClick={() => {
+            setSkip(true);
+            setLogin(true);
+          }}
+        >
+          {t("Question.q2")}
+        </a>
+      ),
+    },
+    {
+      data: (
+        <Link
+          to="/"
+          onClick={() => {
+            setHome(true);
+            setContact(false);
+            setProfile(false);
+            setCall(false);
+            setSite(false);
+          }}
+        >
+          {t("Home.home")}
+        </Link>
+      ),
+    },
   ];
 
-  const [activeLang, setActiveLang] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
 
   const { i18n } = useTranslation();
@@ -75,6 +126,7 @@ function NavBar({ setChange, setLoading, setContact, setHome, setProfile }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.7 } }}
       exit={{ opacity: 0, transition: { duration: 0.7 } }}
+      className={login ? "d-none" : ""}
     >
       <div className="navData">
         <div className="navIcon">
@@ -115,6 +167,9 @@ function NavBar({ setChange, setLoading, setContact, setHome, setProfile }) {
           onClick={() => {
             setHome(true);
             setContact(false);
+            setProfile(false);
+            setCall(false);
+            setSite(false);
           }}
           className="d-flex align-items-center"
         >
@@ -159,20 +214,71 @@ function NavBar({ setChange, setLoading, setContact, setHome, setProfile }) {
       >
         <ul
           className={
-            activeNav ? "mobNav d-md-none activeList" : "mobNav d-md-none"
+            activeNav ? "mobNav d-md-none activeMobNav" : "mobNav d-md-none"
           }
         >
-          <Link to="/projects">
-            <li onClick={() => setActiveNav(false)}>{t("Home.sites")}</li>
-          </Link>
-          <Link to="/profile">
-            <li onClick={() => setActiveNav(false)}>{t("Home.services")}</li>
-          </Link>
           <Link to="/">
             <li
               onClick={() => {
                 setActiveNav(false);
-                setContact(true);
+                setHome(true);
+                setContact(false);
+                setProfile(false);
+                setCall(false);
+                setSite(false);
+              }}
+            >
+              {t("Home.home")}
+            </li>
+          </Link>
+
+          <a
+            href="/login"
+            onClick={() => {
+              setSkip(true);
+              setLogin(true);
+            }}
+          >
+            {t("Question.q2")}
+          </a>
+
+          <Link to="/projects">
+            <li
+              onClick={() => {
+                setSite(true);
+                setActiveNav(false);
+                setContact(false);
+                setProfile(false);
+                setHome(false);
+                setCall(false);
+              }}
+            >
+              {t("Home.sites")}
+            </li>
+          </Link>
+          <Link to="/profile">
+            <li
+              onClick={() => {
+                setActiveNav(false);
+                setProfile(true);
+                setCall(false);
+                setHome(false);
+                setContact(false);
+                setSite(false);
+              }}
+            >
+              {t("Home.services")}
+            </li>
+          </Link>
+          <Link to="/profile">
+            <li
+              onClick={() => {
+                setCall(true);
+                setActiveNav(false);
+                setContact(false);
+                // setProfile(false);
+                setHome(false);
+                setSite(false);
               }}
             >
               {t("Home.call")}

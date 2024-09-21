@@ -1,0 +1,131 @@
+#adminCont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#admin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.activeAdmin {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#admin form {
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: rgb(102, 154, 250);
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+
+#admin form > div:nth-child(1),
+#admin form > div:nth-child(2) {
+  width: 80%;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+#admin form > div:nth-child(1) label,
+#admin form > div:nth-child(2) label {
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+#admin form > div:nth-child(1) input,
+#admin form > div:nth-child(2) input {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2px;
+  font-size: 18px;
+  outline: none;
+}
+
+#admin form > div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#admin form > div:last-child > div button {
+  border: none;
+  width: 100px;
+  margin: 15px 5px;
+  padding: 4px 15px;
+  font-weight: 650;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#admin form > div:last-child > div button:first-child {
+  color: white;
+  background-color: rgb(255, 91, 91);
+}
+#adminCont .addCont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s ease-in-out;
+}
+
+#adminCont .add {
+  height: fit-content !important;
+  background-color: rgb(102, 154, 250);
+  border-radius: 10px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.activeAdd {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+#adminCont .add i {
+  background-color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: green;
+}
+#adminCont .add p {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
