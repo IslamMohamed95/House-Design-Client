@@ -90,9 +90,9 @@ function App() {
     setLoading(true);
     fetchData();
     if (
-      window.location.href.includes("https://loquacious-churros-de12d3.netlify.app/login") ||
-      window.location.href.includes("https://loquacious-churros-de12d3.netlify.app/board") ||
-      window.location.href.includes("https://loquacious-churros-de12d3.netlify.app/dashboard")
+      window.location.href.includes("http://localhost:3000/login") ||
+      window.location.href.includes("http://localhost:3000/board") ||
+      window.location.href.includes("http://localhost:3000/dashboard")
     ) {
       setLogin(true);
       setSkip(true);
@@ -123,7 +123,7 @@ function App() {
           </div>
         ) : (
           <Router>
-            {window.location.href.includes("https://loquacious-churros-de12d3.netlify.app/board") ? (
+            {window.location.href.includes("http://localhost:3000/board") ? (
               <DashNav setExit={setExit} />
             ) : (
               <React.Fragment>
@@ -306,8 +306,8 @@ function App() {
                     }
                   />
                 </React.Fragment>
-                ) : window.location.href.includes(
-                "https://loquacious-churros-de12d3.netlify.app/dashboard" ) ? (
+                 : window.location.href.includes(
+                "http://localhost:3000/dashboard" ) ? (
                 <Route
                   path="/dashboard"
                   element={
@@ -325,7 +325,7 @@ function App() {
                 />
                 ) : (
                 <Route path="/designs" element={<Project3D />} />
-                )}
+                )
               </Routes>
             </AnimatePresence>
           </Router>
