@@ -1,20 +1,11 @@
 import { t } from "i18next";
 import React, { useEffect, useState } from "react";
-// import { useTranslation } from "react-i18next";
 import { login, passwordReset, setInputs } from "../../connection/service";
 import "./Login.css";
 import logo from "../../assets/Logo/HD Logo.png";
 import { useNavigate } from "react-router-dom";
 
-function Login({
-  // setLoading,
-  // setChange,
-  isSubmit,
-  setSubmit,
-  setAction,
-  setExit,
-  code,
-}) {
+function Login({ isSubmit, setSubmit, setAction, setExit, code }) {
   const [eye, setEye] = useState(false);
   const [error, setErr] = useState(null);
   const [resetForm, setResetForm] = useState(false);
@@ -33,7 +24,6 @@ function Login({
     email: "",
     password: "",
   });
-  // const { i18n } = useTranslation();
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -45,18 +35,6 @@ function Login({
     setSubmit(true);
   };
 
-  // const handleLang = async (lang) => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1200);
-  //   if (t("NavBar.lang") === "Arabic") {
-  //     await setChange(true);
-  //   } else {
-  //     await setChange("false");
-  //   }
-  //   i18n.changeLanguage(lang);
-  // };
   const handleReset = (e) => {
     e.preventDefault();
     if (

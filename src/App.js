@@ -90,9 +90,9 @@ function App() {
     setLoading(true);
     fetchData();
     if (
-      window.location.href.includes("http://localhost:3000/login") ||
-      window.location.href.includes("http://localhost:3000/board") ||
-      window.location.href.includes("http://localhost:3000/dashboard")
+      window.location.href.includes("https://www.housed.ae//login") ||
+      window.location.href.includes("https://www.housed.ae//board") ||
+      window.location.href.includes("https://www.housed.ae//dashboard")
     ) {
       setLogin(true);
       setSkip(true);
@@ -123,7 +123,7 @@ function App() {
           </div>
         ) : (
           <Router>
-            {window.location.href.includes("http://localhost:3000/board") ? (
+            {window.location.href.includes("https://www.housed.ae//board") ? (
               <DashNav setExit={setExit} />
             ) : (
               <React.Fragment>
@@ -306,8 +306,8 @@ function App() {
                     }
                   />
                 </React.Fragment>
-                ) : window.location.href.includes(
-                "http://localhost:3000/dashboard" ) ? (
+                : window.location.href.includes(
+                "https://www.housed.ae//dashboard" ) ?
                 <Route
                   path="/dashboard"
                   element={
@@ -323,9 +323,8 @@ function App() {
                     />
                   }
                 />
-                ) : (
+                :
                 <Route path="/designs" element={<Project3D />} />
-                )}
               </Routes>
             </AnimatePresence>
           </Router>

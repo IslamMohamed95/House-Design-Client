@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const client = axios.create({
-  baseURL: "http://server.housed.ae/",
+  baseURL: "https://construction-company-server.onrender.com/",
 });
 
 export default {
