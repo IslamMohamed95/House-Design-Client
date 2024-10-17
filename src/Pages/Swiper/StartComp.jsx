@@ -11,11 +11,11 @@ import img3 from "../../assets/Home Images/h3.jpeg";
 import img4 from "../../assets/Home Images/h4.jpeg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCube, Pagination, Navigation, Autoplay } from "swiper/modules";
+
+import "swiper/css/bundle";
 
 import "./StartComp.css";
-import "swiper/css";
-import "swiper/css/effect-cube";
-import { EffectCube, Pagination, Navigation, Autoplay } from "swiper";
 
 const StartComp = ({ width }) => {
   return (
