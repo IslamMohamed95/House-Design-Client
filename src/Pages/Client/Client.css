@@ -1,0 +1,236 @@
+.dashboard {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(102, 154, 250);
+}
+.dashboard .clientContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  min-height: 97vh;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+.dashboard .userInfo {
+  width: 95%;
+  padding: 15px 10px;
+  background-color: rgb(102, 154, 250);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.dashboard .userInfo div h2,
+.dashboard .userInfo div p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.dashboard .userInfo div h2 {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.dashboard .userInfo div p {
+  color: rgb(204, 204, 204);
+  font-size: 15px;
+  font-weight: bold;
+}
+.dashboard .userInfo .joinDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.dashboard .userInfo .joinDate p:first-child {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+.dashboard .userInfo .joinDate p:last-child {
+  font-size: 11px;
+}
+.dashboard .userInfo a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0 5px 0px 0;
+  color: rgb(255, 135, 135);
+
+  font-weight: bold;
+}
+
+.dashboard .site {
+  padding: 10px;
+  width: 95%;
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.dashboard .site h4 {
+  font-weight: bold;
+  color: grey;
+  font-size: 18px;
+  margin: 7px 0 0 0;
+}
+.dashboard .site h6 {
+  margin: 2px 0 0 2px;
+  color: grey;
+  font-size: 14px;
+}
+.dashboard .site h4::first-letter {
+  text-transform: uppercase;
+}
+
+/* .dashboard div:nth-child(1) {
+  margin-top: 20px;
+} */
+.dashboard div {
+  margin-top: 10px;
+}
+.dashboard form {
+  overflow: hidden;
+  position: relative;
+  margin-top: 5px;
+  padding: 7px;
+}
+.dashboard form .Pause {
+  position: absolute;
+  transform: translateX(110%);
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.activePause {
+  transform: translateX(0) !important;
+}
+.dashboard form .Pause textarea {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  height: 60%;
+}
+.dashboard form .Pause button:first-child {
+  background-color: rgb(102, 154, 250);
+  margin-right: 8px;
+}
+.dashboard form .MainCont {
+  transform: translateX(0);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+.deActiveMainCont {
+  transform: translateX(-110%) !important;
+}
+.dashboard form .MainCont > div:first-child,
+.dashboard form .MainCont > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard form .dataCont {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dashboard form label {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.dashboard form input {
+  width: 96%;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 5px 3px 3px;
+  text-align: center;
+  outline: none;
+}
+
+.dashboard .progress-done {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, #f2709c, #ff9472);
+}
+.dashboard .percentage {
+  margin: 20px 0;
+  width: 40%;
+}
+
+.dashboard form div:last-child button {
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 90px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(253, 141, 141);
+  margin: 0 10px;
+}
+.dashboard form div:last-child button:first-child {
+  background-color: rgb(102, 154, 250);
+}
+.stageDetails {
+  margin-top: 5px;
+}
+.stageDetails h2 {
+  margin: 0 0 2px 0;
+  color: grey;
+}
+.stageDetails > p {
+  color: grey;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.stageDetails .row p {
+  margin: 2px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.progress {
+  margin: 20px 0 10px 0 !important;
+}
+.progress-bar {
+  margin: 0 !important;
+}
+
+.completedColor {
+  background-color: green !important;
+}
+.pauseAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Pause {
+  margin-top: 30px !important;
+}
+.Pause div {
+  margin-top: 25px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

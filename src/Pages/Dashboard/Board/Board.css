@@ -1,0 +1,2117 @@
+#board {
+  position: relative;
+  background-color: rgb(102, 154, 250);
+  display: flex;
+  min-height: 100vh;
+  padding-bottom: 70px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#board a {
+  text-decoration: none;
+}
+
+#board > div:nth-child(1) > div:first-child h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#board > div:nth-child(1) > div:first-child p {
+  margin: 0;
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+}
+
+#board > div:nth-child(1) > div:first-child span {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: fit-content;
+  margin: 5px 0;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: rgb(102, 154, 250);
+}
+
+#board > div:nth-child(1) > div:first-child > div > span {
+  font-weight: bold;
+  width: 120px;
+  font-size: 17px;
+  padding: 5px 10px;
+  background-color: rgb(247, 61, 61);
+}
+
+#board > div:nth-child(1) > div:first-child span p {
+  font-size: 17px;
+  margin-left: 5px;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+}
+
+#board > div:nth-child(1) > div:first-child span i {
+  font-size: 18px;
+}
+
+#board > div:nth-child(1) > div > div:nth-child(2) {
+  width: 47%;
+  transition: all 0.3s ease-in-out;
+}
+.activeNav {
+  width: 45% !important;
+}
+
+.style {
+  width: 75% !important;
+}
+
+#board > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px 5px 18px 5px;
+  border-radius: 25px;
+  width: 95%;
+
+  transform: translate(0, 55px);
+  background-color: white;
+}
+
+#board > div:nth-child(1) > div:first-child {
+  width: 100%;
+  align-self: left;
+  padding-left: 8px;
+}
+
+#board > div:nth-child(1) > div:first-child > div {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#board > div:nth-child(1) > div:first-child > div > div {
+  display: flex;
+}
+
+#board > div:nth-child(1) > div:first-child > div > div span:nth-child(2) {
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+
+#board > div:nth-child(1) > .row {
+  margin: 0;
+  width: 100%;
+}
+
+#board > div:nth-child(1) > .row > div {
+  margin: 1.5%;
+}
+
+#board > div:nth-child(1) > div:nth-child(2) > div {
+  width: 47%;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  text-align: center;
+  padding: 4% 0;
+}
+
+#board > div:nth-child(1) > div:nth-child(2) > div p {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: rgb(153, 153, 153);
+}
+#board > div:nth-child(1) > div:nth-child(2) > div > div h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+}
+#board > div:nth-child(1) > div:nth-child(2) > div > div span {
+  font-size: 30px;
+}
+
+#board > div:nth-child(1) > div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+  padding: 5px 3px;
+  width: 95%;
+}
+#board > div:nth-child(1) > div:nth-child(3) > div:first-child {
+  font-weight: bold;
+  width: 45%;
+}
+
+#board > div:nth-child(1) > div:nth-child(3) > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#board > div:nth-child(1) > div:nth-child(3) > div:last-child h5 {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 21px;
+  font-weight: bold;
+  color: rgb(160, 160, 160);
+}
+
+#board > div:nth-child(1) > div:nth-child(3) > div:last-child > div {
+  margin: 10px 25px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+#board > div:nth-child(1) > div:nth-child(3) > div:last-child > div span {
+  font-size: 16px;
+}
+
+#board > div:nth-child(1) > div:nth-child(3) > div:last-child > div span i {
+  font-size: 12px;
+}
+
+#board
+  > div:nth-child(1)
+  > div:nth-child(3)
+  > div:last-child
+  > div
+  span:first-child
+  i {
+  color: rgb(248, 28, 28);
+}
+#board
+  > div:nth-child(1)
+  > div:nth-child(3)
+  > div:last-child
+  > div
+  span:nth-child(2)
+  i {
+  color: rgb(255, 226, 65);
+}
+#board
+  > div:nth-child(1)
+  > div:nth-child(3)
+  > div:last-child
+  > div
+  span:last-child
+  i {
+  color: rgb(62, 255, 104);
+}
+
+#board > div:nth-child(1) > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 10px 0;
+  width: 98%;
+  border-radius: 10px;
+  background-color: rgb(102, 154, 250);
+}
+
+#board > div:nth-child(1) > div:nth-child(4) span {
+  align-self: flex-start;
+  background-color: white;
+  margin: 0px 0 10px 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) span p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) > div {
+  margin: 15px 0;
+  width: 95%;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) > div > div:first-child {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 0 10px 13px;
+
+  transition: all 0.4s ease-in-out;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) > div > div:first-child a {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 18px;
+  left: 70px;
+  top: 5px;
+  color: rgb(160, 160, 160);
+}
+
+.activeTable {
+  height: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) section > div {
+  margin: 7px 0 0px 0;
+  display: flex;
+  padding: 0;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) section span {
+  width: 110px;
+  padding: 4px 10px;
+  margin: 0;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) section .filterLi {
+  position: absolute;
+  top: 100%;
+  background-color: rgba(226, 226, 226, 0.9);
+
+  border-radius: 10px;
+  width: 100%;
+  z-index: 5;
+  height: 0;
+  overflow: hidden;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.showList {
+  height: 75px !important;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) section .filterLi ul {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+
+  margin: 0;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) section .filterLi ul hr {
+  margin: 5px 0;
+  height: 1;
+  width: 80%;
+  background-color: white !important;
+}
+#board > div:nth-child(1) > div:nth-child(4) section .filterLi ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) section .filterLi ul li:hover {
+  color: black !important;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) section select {
+  width: 0;
+  overflow: hidden;
+  width: 0;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.showFilterLi,
+.stageFilter {
+  width: 120px !important;
+}
+
+.stageFilter {
+  margin: 0 !important;
+}
+
+#board
+  > div:nth-child(1)
+  > div:nth-child(4)
+  > div
+  > div:first-child
+  > div:first-child {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+}
+
+.activeContDetail {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) > div > div:first-child .state {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-25px, 20px);
+  width: 27%;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+#board > div:nth-child(1) > div:nth-child(4) > div h5 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) > div .fa-angle-down {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 22px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.changeArrow {
+  bottom: 5px !important;
+  transform: rotate(180deg);
+}
+
+#board > div:nth-child(1) > div:nth-child(4) > div p {
+  font-weight: 650;
+  font-size: 15px;
+  color: rgb(167, 167, 167);
+  display: flex;
+  margin: 0 0 0 8px;
+}
+#board > div:nth-child(1) > div:nth-child(4) > div p span {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 5px 0 0;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) .userData {
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: height 0.5s linear, visibility 0.55s ease-in-out,
+    opacity 0.55s ease-in-out;
+}
+.showTable {
+  height: 100% !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+#board > div:nth-child(1) > div:nth-child(4) .userData table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#board > div:nth-child(1) > div:nth-child(4) .userData table td,
+#board > div:nth-child(1) > div:nth-child(4) .userData table th {
+  font-size: 15px;
+  padding: 2px 3px;
+  width: fit-content;
+  text-align: center !important;
+  border: 0.5px solid rgb(207, 207, 207);
+  text-align: left;
+}
+
+#board
+  > div:nth-child(1)
+  > div:nth-child(4)
+  .userData
+  table
+  thead
+  tr:nth-child(odd) {
+  background-color: rgb(226, 226, 226);
+}
+
+#board
+  > div:nth-child(1)
+  > div:nth-child(4)
+  .userData
+  table
+  tbody
+  tr:nth-child(odd) {
+  background-color: white;
+}
+/*-------------------- Desktop Styles ---------------------*/
+/*--------- General styles for Desktop----------------*/
+#desktop li:hover {
+  color: white;
+  background-color: rgb(102, 154, 250);
+}
+/*----------------------------------------------------*/
+#desktop {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(102, 154, 250);
+  display: flex;
+  flex-direction: column;
+}
+
+#desktopNav {
+  padding: 10px 0 10px 20px;
+  height: fit-content;
+  width: 100%;
+}
+
+#desktopNav a {
+  text-decoration: none;
+  color: white;
+}
+
+#desktopNav a h6 {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px black;
+  margin: 0;
+}
+
+#desktopNav a h6 span {
+  color: rgb(247, 61, 61);
+  text-shadow: 1px 1px 5px white;
+}
+
+#desktopCont {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+}
+#desktopCont .listCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 23vw;
+  color: white;
+  height: 100%;
+}
+#desktopCont .listCont h5 {
+  font-size: 28px;
+}
+#desktop .listCont > p {
+  color: rgb(221, 221, 221);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#desktopCont .listCont ul {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+}
+#desktopCont .listCont ul a {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+#desktopCont .listCont ul a i {
+  font-size: 20px;
+}
+#desktopCont .listCont ul li {
+  margin-left: 15px;
+  font-size: 19px;
+  white-space: nowrap;
+  transition: all 0.4s ease-in-out;
+}
+
+#desktopCont .boardCont {
+  width: 75vw;
+  height: 90vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.boardCont-withScroll {
+  overflow-y: scroll !important;
+}
+
+#desktopCont .boardCont > div {
+  width: 100%;
+  height: 100%;
+}
+
+#desktopCont .listCont {
+  padding: 25px 20px;
+}
+
+/*-----------------------------*/
+.boardCont .row {
+  padding: 10px 0;
+  margin: 0 0 8px 0 !important;
+}
+
+.boardCont .boardView {
+  padding: 8px 0 0 0;
+  height: 100%;
+  transform: translateX(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.deActiveBoardLeft {
+  transform: translateX(-100%) !important;
+}
+.deActiveBoardRight {
+  transform: translateX(100%) !important;
+}
+
+.boardCont .boardView .row {
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.boardCont .boardView .row > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  height: 140px;
+  width: 23%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 8px 10px rgba(0, 0, 0, 0.22);
+}
+.boardCont .boardView .row > div:first-child {
+  background-color: rgb(98, 168, 248);
+}
+.boardCont .boardView .row > div:first-child,
+.boardCont .boardView .row > div:nth-child(4) {
+  color: white;
+}
+.boardCont .boardView .row > div:first-child p,
+.boardCont .boardView .row > div:nth-child(4) p {
+  color: white;
+}
+
+.boardCont .boardView .row > div:nth-child(2),
+.boardCont .boardView .row > div:nth-child(3) {
+  background-color: rgb(228, 228, 228);
+}
+.boardCont .boardView .row > div:nth-child(4) {
+  background-color: rgb(255, 116, 116);
+}
+
+.boardCont .boardView .row > div h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.boardCont .boardView .row > div label {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.boardCont .boardView .row > div p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 13px;
+  color: rgb(184, 184, 184);
+}
+
+.boardCont .boardView .eval {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boardCont .boardView .eval .performance {
+  width: 50%;
+}
+.boardCont .boardView .eval .chart {
+  overflow: hidden;
+  padding-left: 50px !important;
+  width: 45%;
+}
+.boardCont .boardView .eval .chart canvas {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.boardCont .boardView .eval .chart,
+.boardCont .boardView .eval .performance {
+  padding: 10px;
+}
+
+.boardCont .boardView .eval .performance {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boardCont .boardView .eval .performance .data {
+  width: 55%;
+}
+.boardCont .boardView .eval .performance .data h5 {
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 0.5px 0.5px 2px black;
+}
+.boardCont .boardView .eval .performance .data ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.boardCont .boardView .eval .performance .data ul li {
+  font-size: 17px;
+  font-weight: 500;
+}
+.boardCont .boardView .eval .performance .data ul li i {
+  font-size: 12px;
+}
+.boardCont .boardView .eval .performance .data ul li:first-child i {
+  color: red;
+}
+.boardCont .boardView .eval .performance .data ul li:nth-child(2) i {
+  color: rgb(252, 252, 109);
+}
+.boardCont .boardView .eval .performance .data ul li:nth-child(3) i {
+  color: rgb(119, 253, 119);
+}
+/*----------------------------*/
+
+.boardCont .boardView .tableView {
+  margin-top: 30px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  overflow-y: scroll;
+  margin-bottom: 40px;
+}
+.boardCont .boardView .tableContainer {
+  width: 95%;
+  max-height: 200px;
+  overflow-y: scroll;
+  position: relative;
+}
+.userContractsTable > div {
+  max-height: 70vh;
+  height: fit-content;
+  overflow-y: scroll;
+}
+
+.boardCont .boardView .tableView,
+.boardCont .editContract .userContractsTable {
+  margin-top: 20px;
+  width: 100%;
+}
+.boardCont .editContract .userContractsTable {
+  margin-top: 30px;
+  max-height: 550px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.boardCont .editContract .userContractsTable::-webkit-scrollbar {
+  display: none;
+}
+.visitor-sales {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.visitor-tableView {
+  width: 65%;
+}
+.visitor-tableView > div > div {
+  position: relative;
+  align-self: flex-start;
+}
+.visitor-tableView > div,
+.sales-tableView > div {
+  width: 95%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.visitor-tableView > div {
+  margin-bottom: 1%;
+}
+.sales-tableView > div {
+  margin-bottom: 1.5%;
+}
+.visitor-tableView > div button {
+  background-color: rgb(255, 116, 116);
+  margin-right: 2%;
+}
+.excel {
+  padding: 6px 0 !important;
+  color: white;
+  background-color: rgb(102, 154, 250);
+}
+
+.visitor-tableView > div button,
+.sales-tableView > div button {
+  border: none;
+  width: 120px;
+  padding: 3px 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+.visitor-tableView .fa-magnifying-glass {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  font-size: 16px;
+}
+.visitor-tableView input {
+  width: 300px;
+  margin-bottom: 5px;
+  padding: 3px 0;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 8px;
+  text-align: center;
+}
+.sales-tableView {
+  width: 35%;
+}
+
+.visitor-tableView,
+.sales-tableView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.boardCont .boardView .tableView table,
+.boardCont .editContract .userContractsTable table,
+.visitor-tableView table,
+.sales-tableView table {
+  width: 100%;
+}
+
+.boardCont .boardView table th,
+.boardCont .editContract .userContractsTable table th,
+.boardCont .visitor-tableView table th,
+.sales-tableView table th {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  position: sticky;
+  left: 0;
+  color: white;
+}
+
+.boardCont .boardView .tableView table td,
+.boardCont .boardView .tableView table th,
+.boardCont .editContract .userContractsTable table td,
+.boardCont .editContract .userContractsTable table th,
+.visitor-tableView table th,
+.visitor-tableView table td,
+.sales-tableView table th,
+.sales-tableView table td {
+  padding: 3px 0;
+  border-collapse: collapse;
+  border: 0.5px solid rgb(228, 228, 228);
+  text-align: center;
+  font-size: 13px;
+}
+.visitor-tableView table td:last-child {
+  position: relative;
+  width: 250px;
+}
+.visitor-tableView table td:last-child:hover {
+  cursor: pointer;
+}
+.visitor-tableView table td:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visitor-tableView table td:last-child > div p {
+  margin: 0;
+}
+.visitor-tableView table td:last-child > div i {
+  position: absolute;
+  right: 20px;
+
+  transition: all 0.4s ease-in-out;
+}
+.rotateStatus {
+  transform: rotate(-90deg) !important;
+}
+.visitor-tableView table td:last-child ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  max-height: 0;
+  width: 100%;
+  padding: 0;
+  background-color: rgb(230, 230, 230);
+  overflow-y: scroll;
+  transition: all 0.4s ease-in-out;
+}
+.visitor-tableView table td:last-child ul li {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.visitor-tableView table td:last-child ul li:hover {
+  background-color: rgb(102, 154, 250);
+  color: white !important;
+}
+.activeVisitorList {
+  max-height: 65px !important;
+}
+.visitor-tableView table td:last-child ul li {
+  margin: 3px 0;
+  padding: 2px 0;
+  width: 95%;
+  background-color: white;
+  border-radius: 5px;
+}
+.visitor-tableView table td:last-child ul li:first-child {
+  margin-top: 6px;
+}
+.visitor-tableView table td:last-child ul li:last-child {
+  margin-bottom: 6px;
+}
+.boardCont .boardView .tableView table th,
+.boardCont .editContract .userContractsTable table th,
+.sales-tableView table th {
+  font-size: 16px;
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(102, 154, 250),
+    rgb(167, 197, 253)
+  );
+}
+.visitor-tableView table th {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 97, 97),
+    rgb(255, 158, 158)
+  );
+}
+.boardCont .boardView .tableView table tr,
+.visitor-tableView table tr,
+.sales-tableView table tr {
+  height: 35px;
+}
+
+.boardCont .boardView .tableView table tr {
+  position: relative;
+}
+.boardCont .boardView .tableView table tr .pauseBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 83.2%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 !important;
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boardCont .boardView .tableView table tr .pauseBG button {
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  width: 90px;
+  background-color: rgb(215, 218, 215);
+  color: black;
+  font-weight: bold;
+}
+
+.boardCont .editContract .userContractsTable table tr .edit:hover,
+.boardCont .editContract .userContractsTable table tr .download:hover {
+  cursor: pointer;
+}
+
+.messages {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.activeMessages {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.messages .askDelete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(102, 154, 250);
+  padding: 20px;
+  border-radius: 10px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.activeAskDelete {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.messages .askDelete > div:first-child {
+  position: relative;
+  overflow: hidden;
+}
+.messages .askDelete > div:first-child input {
+  position: absolute;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transform: translateX(100%);
+  top: 0;
+  left: 0;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.activeCode {
+  transform: translateX(0) !important;
+}
+
+.messages .askDelete > div:first-child p {
+  margin: 0;
+}
+
+.messages .askDelete > div:first-child p {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.messages .askDelete > div:first-child p:last-child {
+  font-size: 15px;
+}
+.messages .askDelete > div:first-child p:first-child {
+  transform: translateX(0);
+  transition: all 0.2s ease-in-out;
+}
+.hideMessage {
+  transform: translateX(-100%) !important;
+}
+
+.messages .askDelete > div button {
+  border: none;
+  font-size: 15px;
+  width: 90px;
+  border-radius: 5px;
+  margin: 10px 5px 5px 5px;
+  padding: 3px;
+  font-weight: 400;
+}
+
+.messages .trashMessage {
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(102, 154, 250);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.activeTrashMessage {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.messages .trashMessage i {
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.messages .trashMessage p {
+  font-weight: 600;
+  color: white;
+}
+
+.boardCont .newContract {
+  transform: translateX(100%);
+}
+.doubleNewContract {
+  transform: translateX(200%);
+}
+.doubleEditContract {
+  transform: translateX(-200%);
+}
+
+.boardCont .newContract,
+.doubleNewContract,
+.boardCont .editContract,
+.doubleEditContract {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll !important;
+  align-items: center;
+  padding: 20px 15px;
+  transition: all 0.4s ease-in-out;
+}
+.boardCont .newContract {
+  justify-content: center;
+  min-height: 100%;
+}
+.boardCont .editContract {
+  transform: translateX(-100%);
+}
+
+.boardCont .editContract .userInfo {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: rgb(102, 154, 250);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.boardCont .editContract .userInfo > div,
+.boardCont .editContract .userInfo > div > div {
+  display: flex;
+  flex-direction: column;
+}
+.boardCont .editContract .userInfo > div h3 {
+  margin: 0;
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.boardCont .editContract .userInfo > div > div {
+  padding-left: 10px;
+}
+.boardCont .editContract .userInfo > div > div label {
+  margin: 1px 0;
+  color: white;
+  font-weight: bold;
+}
+.boardCont .editContract .userInfo > div:last-child {
+  text-align: center;
+}
+.boardCont .editContract .userInfo > div:last-child p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+.boardCont .editContract .userInfo > div:last-child label {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+.activeNewContract,
+.activeEditContract {
+  transform: translateX(0) !important;
+}
+
+.boardCont .newContract .switch {
+  text-align: center;
+  width: fit-content;
+}
+.boardCont .newContract .switch > div {
+  position: relative;
+}
+.boardCont .newContract .switch > div input {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 450px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(233, 233, 233);
+  outline: none;
+}
+
+.boardCont .newContract .switch > div i {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  color: black;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rotateArrow {
+  transform: rotate(-90deg);
+}
+
+.boardCont .newContract .switch > div > div {
+  position: absolute;
+  margin-top: 4px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 2.5px 0;
+  height: fit-content;
+}
+
+.boardCont .newContract .switch > div > div ul {
+  padding: 0;
+  transition: all 0.3s linear;
+  min-height: 0;
+  max-height: 0;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px !important;
+  z-index: 5;
+  list-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.activeList {
+  min-height: 43px !important;
+  max-height: 270px !important;
+}
+.boardCont .newContract .switch > div > div ul li,
+.boardCont .newContract .switch > div > div ul input {
+  border-radius: 5px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.boardCont .newContract .switch > div > div ul li {
+  font-size: 18px;
+  margin: 5px;
+  padding: 3px;
+
+  font-weight: 500;
+}
+
+.boardCont .newContract .switch > div > div ul li:first-child {
+  position: relative;
+  padding: 0;
+  margin: 5px;
+}
+.boardCont .newContract .switch > div > div ul li:first-child i {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  font-size: 18px;
+  z-index: 10;
+}
+.boardCont .newContract .switch > div > div ul input {
+  width: 100%;
+  font-size: 15px;
+}
+
+.boardCont .newContract .switch > div > div ul li:hover,
+.boardCont
+  .newContract
+  .clientInfo
+  form
+  .infoCont
+  .clientLoc
+  > div
+  ul
+  li:hover {
+  background-color: rgb(102, 154, 250);
+  color: white !important;
+}
+.boardCont .newContract .switch p {
+  margin-top: 5px;
+  font-size: 17px;
+  color: rgb(189, 189, 189);
+}
+/*-------------------------------------------------------*/
+.boardCont .newContract .clientInfo,
+.boardCont .newContract .contract {
+  margin: 1px 0;
+  position: relative;
+  width: 95%;
+  border: 5px double rgb(212, 212, 212);
+  border-radius: 10px;
+}
+.boardCont .newContract .contract {
+  margin-top: 20px;
+}
+.boardCont .newContract .clientInfo form,
+.boardCont .newContract .contract form {
+  padding: 20px;
+}
+
+.boardCont .newContract .clientInfo h5,
+.boardCont .newContract .contract h5 {
+  position: absolute;
+  padding: 0 10px;
+  background-color: white;
+  top: -22px;
+  left: 22px;
+  font-size: 30px;
+}
+.boardCont .newContract .clientInfo form .infoCont,
+.boardCont .newContract .contract form .infoCont {
+  display: flex;
+  margin: 2px 0 0 0 !important;
+}
+.boardCont .newContract .clientInfo form .infoCont > div,
+.boardCont .newContract .contract form .infoCont > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 33.2%;
+}
+.boardCont .newContract .clientInfo form .infoCont > div label,
+.boardCont .newContract .contract form .infoCont > div label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.boardCont .newContract .clientInfo form .infoCont > div input,
+.boardCont .newContract .contract form .infoCont > div input {
+  text-align: center;
+  padding: 2.5px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+
+  font-size: 18px;
+}
+.inpOutLine {
+  outline: 1px solid red !important;
+}
+
+input:hover,
+input:hover {
+  cursor: pointer;
+}
+.boardCont .newContract .clientInfo form .infoCont .PhoneInputInput {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.boardCont .newContract .clientInfo form .infoCont .buttons,
+.boardCont .newContract .contract form .infoCont .buttons {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.boardCont .newContract .clientInfo form .infoCont .buttons button,
+.boardCont .newContract .contract form .infoCont .buttons button {
+  width: 45%;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 3.5px;
+  background-color: rgb(102, 154, 250);
+  color: white;
+}
+
+.boardCont .newContract .clientInfo form .infoCont .buttons button:last-child,
+.boardCont .newContract .contract form .infoCont .buttons {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.boardCont .newContract .clientInfo form .infoCont .buttons button:last-child,
+.boardCont .newContract .contract form .infoCont .buttons button:last-child {
+  background-color: rgb(255, 97, 97);
+}
+
+.activeBtnCancel,
+.activeButtons {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.locCont:hover {
+  cursor: pointer;
+}
+
+.boardCont .newContract .clientInfo form .infoCont .clientLoc,
+.boardCont .newContract .contract form .infoCont .salesmen,
+.boardCont .newContract .contract form .infoCont .stages,
+.boardCont .newContract .contract form .infoCont .contractLoc {
+  position: relative;
+}
+
+.boardCont .newContract .clientInfo form .infoCont .clientLoc i,
+.boardCont .newContract .contract form .infoCont .salesmen i,
+.boardCont .newContract .contract form .infoCont .stages i,
+.boardCont .newContract .contract form .infoCont .contractLoc i {
+  position: absolute;
+  top: 8px;
+  font-size: 17px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeClientLoc,
+.activeStagesArrow,
+.activeSalesmenArrow,
+.activeContractLocArrow {
+  transform: rotate(-90deg);
+}
+
+.boardCont .newContract .clientInfo form .infoCont .clientLoc > div,
+.boardCont .newContract .contract form .infoCont .salesmen > div,
+.boardCont .newContract .contract form .infoCont .stages > div,
+.boardCont .newContract .contract form .infoCont .contractLoc > div {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  margin-top: 2px;
+  overflow: hidden;
+  z-index: 2;
+}
+.boardCont .newContract .clientInfo form .infoCont .clientLoc > div ul,
+.boardCont .newContract .contract form .infoCont .salesmen > div ul,
+.boardCont .newContract .contract form .infoCont .stages > div ul,
+.boardCont .newContract .contract form .infoCont .contractLoc > div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 0;
+  max-height: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeClientCities,
+.activeStages,
+.activeContractLoc {
+  min-height: 35px !important;
+  max-height: 153px !important;
+}
+.activeSalesmen {
+  min-height: 35px !important;
+  max-height: 80px !important;
+}
+
+.boardCont .newContract .clientInfo form .infoCont .clientLoc > div ul li,
+.boardCont .newContract .contract form .infoCont .salesmen > div ul li,
+.boardCont .newContract .contract form .infoCont .stages > div ul li,
+.boardCont .newContract .contract form .infoCont .contractLoc > div ul li {
+  width: 96.5%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 4px 0;
+  margin: 3px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+/*----------- Edit Contract Action style-----------*/
+.boardCont .editContractAction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  position: absolute;
+  transform: translateY(-150%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeEditContractAction {
+  transform: translateY(0) !important;
+}
+
+.editContractAction h1 {
+  margin-top: 10px;
+  font-weight: 400;
+  color: rgb(189, 189, 189);
+}
+
+.editContractAction form {
+  padding: 25px 15px;
+
+  width: 95%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.editContractAction form input {
+  width: 100%;
+  padding: 3px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 236, 236);
+}
+
+.editContractAction form label {
+  font-size: 22px;
+  margin-bottom: 3px;
+  font-weight: bold;
+  color: black;
+}
+
+.editContractAction form > div {
+  margin: 15px 0;
+}
+
+.editContractAction form > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.editContractAction form > div .stage,
+.editContractAction form > div .status,
+.editContractAction form > div .location,
+.editContractAction form > div .salesmen,
+.editContractAction form > div .stage > div:first-child,
+.editContractAction form > div .status > div:first-child,
+.editContractAction form > div .location > div:first-child,
+.editContractAction form > div .salesmen > div:first-child {
+  position: relative;
+}
+
+.editContractAction form > div .stage .select i,
+.editContractAction form > div .status .select i,
+.editContractAction form > div .location .select i,
+.editContractAction form > div .salesmen .select i {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 17px;
+  color: black;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.editContractAction form > div .stage > div:last-child,
+.editContractAction form > div .status > div:last-child,
+.editContractAction form > div .location > div:last-child,
+.editContractAction form > div .salesmen > div:last-child {
+  width: 100%;
+  position: absolute;
+  overflow: hidden !important;
+  height: fit-content;
+  top: 101%;
+  left: 0;
+  margin-top: 2px;
+  padding: 0 12px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.editContractAction form > div .stage > div ul,
+.editContractAction form > div .status > div ul,
+.editContractAction form > div .location > div ul,
+.editContractAction form > div .salesmen > div ul {
+  min-height: 0;
+  max-height: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 !important;
+  margin: 0;
+  border-radius: 5px;
+  list-style: none;
+  background-color: rgb(226, 226, 226);
+  text-align: center;
+  z-index: 5;
+
+  transition: all 0.3s ease-in-out;
+}
+.activeEditActionStageSelect {
+  min-height: 33px !important;
+  max-height: 153px !important;
+}
+
+.activeEditActionStatusSelect,
+.activeEditActionLocationSelect,
+.activeEditActionSalesmen {
+  min-height: 33px !important;
+  max-height: 190px !important;
+}
+
+.editContractAction form > div .stage > div ul li,
+.editContractAction form > div .status > div ul li,
+.editContractAction form > div .location > div ul li,
+.editContractAction form > div .salesmen > div ul li {
+  background-color: white;
+  font-size: 18px;
+  width: 97%;
+  padding: 2px 0;
+  margin: 3px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.editContractAction form > div .stage > div ul li:last-child,
+.editContractAction form > div .status > div ul li:last-child,
+.editContractAction form > div .location > div ul li:last-child,
+.editContractAction form > div .salesmen > div ul li:last-child {
+  margin-bottom: 5px;
+}
+
+.editContractAction form > div .stage > div ul li:first-child,
+.editContractAction form > div .status > div ul li:first-child,
+.editContractAction form > div .location > div ul li:first-child,
+.editContractAction form > div .salesmen > div ul li:first-child {
+  margin-top: 5px;
+}
+
+.editContractAction form > div .location {
+  padding-left: 12px;
+}
+
+.editContractAction form > div .stage > div ul li:hover,
+.editContractAction form > div .status > div ul li:hover,
+.editContractAction form > div .location > div ul li:hover,
+.editContractAction form > div .salesmen > div ul li:hover {
+  background-color: rgb(102, 154, 250);
+  color: white !important;
+}
+
+.editContractAction form > div .location > div ul li {
+  font-size: 18px;
+  color: black;
+}
+
+.editContractAction form .actionBtn {
+  margin-top: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editContractAction form .actionBtn div {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editContractAction form > div .buttons button {
+  border: none;
+  outline: none;
+  background-color: rgb(102, 154, 250);
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  border-radius: 5px;
+  width: 110px;
+  padding: 2px;
+}
+.editContractAction form .actionBtn div button:first-child {
+  background-color: rgb(247, 61, 61);
+}
+
+.editContractAction form .file > div label {
+  border: none;
+  font-size: 15px;
+  padding: 5px 0;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(221, 221, 221);
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.editContractAction form .file > div input {
+  width: 50%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.editContractAction form .file > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editContractAction form .file > div > div {
+  width: 0%;
+  height: 100%;
+  padding: 5px 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgb(149, 186, 255);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.editContractAction form .file > div > div i {
+  color: white;
+}
+
+.fileUploaded {
+  width: 60% !important;
+}
+
+.activeFiles {
+  width: 35% !important;
+  background-color: rgb(255, 97, 97) !important;
+  color: white !important;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+
+.editContractAction form .note textarea {
+  width: 100%;
+  resize: none;
+  height: 110px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+/*----------- note style --------*/
+.empty {
+  background-color: rgb(207, 207, 207);
+}
+/*----------- Variations Style -----------*/
+.noVariations {
+  background-color: rgb(87, 87, 87);
+}
+
+.newVariation {
+  position: relative;
+}
+.newVariation span {
+  padding: 9px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1px;
+  right: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-weight: 500;
+  background-color: rgb(255, 162, 162);
+}
+
+.newVariation span:hover {
+  cursor: pointer;
+}
+
+/*----------------- Pop Up style ---------*/
+.popUp {
+  margin: 3% 10%;
+}
+
+.popUp > div {
+  background-color: rgb(102, 154, 250);
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  animation: popup 0.3s linear;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0) translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+}
+
+.popUp > div > div {
+  width: 100%;
+  height: fit-content;
+  max-height: 120px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 3px black inset;
+  padding: 0 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.popUp > div > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  background-color: white;
+  padding: 9px 15px;
+  border-radius: 10px;
+}
+
+.popUp > div > div p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.popUp > div > div button {
+  border: none;
+  border-radius: 5px;
+  padding: 3px 5px;
+  color: white;
+  background-color: rgb(255, 116, 116);
+  font-weight: bold;
+}
+
+.popUp > div > button {
+  margin: 10px 0 0px 0;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(248, 28, 28);
+  border-radius: 5px;
+}
+
+/*----------------- Note Viewer -------------*/
+.notes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: popup 0.3s linear;
+  z-index: 5;
+}
+
+.deavtiveNotes {
+  display: none;
+}
+
+.notes .noteContainer {
+  background-color: rgb(102, 154, 250);
+  width: 450px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notes .noteContainer > div {
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px black inset;
+}
+
+.notes .noteContainer > div textarea {
+  resize: none;
+  border: none;
+  height: fit-content;
+  max-height: 200px;
+  width: 100%;
+  padding: 2px 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+.notes .noteContainer button {
+  margin: 8px 0;
+  border: none;
+  width: 80px;
+  font-size: 18px;
+  color: white;
+  font-weight: 550;
+  padding: 2px 0;
+  border-radius: 5px;
+  background-color: rgb(255, 116, 116);
+}
+
+/*------------- Sales Form ------------*/
+.salesForm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+  transform: translateY(-150%);
+  transition: all 0.4s ease-in-out;
+  z-index: 5;
+}
+
+.activeSalesForm {
+  transform: translateY(0) !important;
+}
+
+.salesForm form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.salesForm form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.salesForm form > div label {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.salesForm form > div input {
+  width: 450px;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  outline: none;
+}
+
+.salesForm form > div:last-child {
+  margin-top: 1.5em;
+  flex-direction: row;
+}
+
+.salesForm form > div:last-child button {
+  margin: 0 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.salesForm form > div:last-child button:last-child {
+  background-color: rgb(149, 186, 255);
+}
+
+.salesForm form > div:last-child button:first-child {
+  background-color: rgb(255, 116, 116);
+}
+/*-------- New Admin ------------*/
+.newAdmin {
+  transform: translateY(-150%);
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.newAdmin p {
+  font-size: 18px;
+  width: 100%;
+  color: red;
+  margin-bottom: 0;
+}
+.activeNewAdminForm {
+  transform: translateY(0) !important;
+}
+.newAdmin form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newAdmin form > div {
+  display: flex;
+  flex-direction: column;
+}
+.newAdmin form div:last-child {
+  flex-direction: row;
+  margin-top: 20px;
+}
+.newAdmin form label {
+  font-size: 28px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.newAdmin form input {
+  width: 420px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+  padding: 5px 0;
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 10px;
+}
+.newAdmin form button {
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  padding: 6px 0;
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+}
+.newAdmin form button:first-child {
+  background-color: rgb(102, 154, 250);
+}
+.newAdmin form button:last-child {
+  background-color: rgb(255, 97, 97);
+}
+.noteContent {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  min-height: fit-content;
+  margin: 5.5px 0;
+
+  width: 100%;
+  padding: 5px;
+}
+.noteContent h6,
+.noteContent p {
+  margin: 0 !important;
+  font-weight: bold;
+  color: grey;
+}
+.noteContent > div:first-child {
+  background-color: rgb(226, 226, 226);
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  padding: 3px 10px;
+  margin-bottom: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pauseFlag {
+  background-color: rgb(255, 116, 116) !important;
+  color: white !important;
+}
+.pauseFlag p,
+.pauseFlag h6 {
+  color: white;
+}
+.pauseApproval {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pauseApproval button:first-child {
+  background-color: rgb(102, 154, 250);
+}
+.pauseApproval button {
+  margin: 3px 5px !important;
+  font-size: 14px !important;
+}

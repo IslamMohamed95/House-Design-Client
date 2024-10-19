@@ -1,0 +1,377 @@
+#login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#login h2 {
+  text-shadow: 1.5px 1.5px 3px black;
+  font-size: 25px;
+  font-weight: bold;
+}
+#login .lastHeader {
+  margin-bottom: 1rem;
+}
+#login > div:first-child > p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  color: rgb(175, 175, 175);
+}
+#login > div:first-child {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+#login > div:first-child form {
+  width: 100%;
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#login > div:first-child form > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+#login > div:first-child form > div:nth-child(2) {
+  margin-bottom: 3%;
+}
+#login > div:first-child form > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#login > div:first-child form > div:nth-child(2) > div input {
+  width: 90%;
+}
+#login > div:first-child form > div:nth-child(2) > div i {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+.EngEye {
+  left: 86% !important;
+}
+#login > div:first-child form {
+  width: 80%;
+}
+#login > div:first-child form > div input {
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+#login > div:first-child form > div input,
+#login > div:first-child form > div label {
+}
+#login > div:first-child form > div label {
+  font-weight: bold;
+  margin-bottom: 1.5%;
+  font-size: 23px;
+}
+#login > div:first-child form button {
+  margin-top: 1%;
+  border: none;
+  background-color: red;
+  color: white;
+}
+#login > div:first-child form > div input,
+#login > div:first-child form > div label,
+#login > div:first-child form button {
+  border-radius: 10px;
+  width: 90%;
+}
+#login > div:first-child form > div input,
+#login > div:first-child form button {
+  font-size: 20px;
+  padding: 2% 0;
+}
+#login footer {
+  font-size: 13px !important;
+  background-color: transparent;
+  color: rgb(240, 136, 136);
+  padding-bottom: 5%;
+  z-index: 2;
+}
+#login .err {
+  margin-bottom: 0;
+  padding-left: 3%;
+  font-size: 17px;
+  width: 60%;
+  color: rgb(247, 127, 127);
+}
+#login div:first-child form span {
+  margin-top: 5%;
+  text-decoration: underline;
+}
+#login form span:hover {
+  cursor: pointer;
+}
+#login .lang {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+#login .lang > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#login .lang > div .fa-globe {
+  font-size: 23px;
+  color: red;
+}
+#login .lang > div .fa-globe:hover {
+  cursor: pointer;
+}
+#login .lang p {
+  font-size: 17px;
+  transform: translateY(15%);
+  color: rgb(151, 151, 151);
+  margin: 0;
+}
+#login .lang ul {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  height: 0;
+  border: none;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+#login .lang ul hr {
+  color: red;
+  margin: 20% 0;
+}
+/*------------------ Reset Password ------------------*/
+#login .reset {
+  overflow: hidden;
+  border-radius: 20px;
+  height: 450px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  transform: translateX(-120%);
+  transition: all 0.2s ease-in-out;
+}
+.activeResetForm {
+  transform: translateX(110px) !important;
+}
+#login .reset .worryMessage {
+  padding: 5px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+
+  transition: all 0.3s ease-in-out;
+}
+.trueReset {
+  width: 100% !important;
+}
+#login .reset .worryMessage > div {
+  display: flex;
+  flex-direction: column;
+}
+#login .reset .worryMessage input {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  padding: 2px 0;
+  outline-color: grey;
+  background-color: rgb(211, 211, 211);
+}
+#login .reset .worryMessage span {
+  margin-top: 2px;
+  font-size: 12px;
+  align-self: flex-start;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.activeNote {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+#login .reset .worryMessage h3 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#login .reset .worryMessage p {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(247, 127, 127);
+}
+#login .reset .worryMessage h3,
+#login .reset .worryMessage p,
+#login .reset .worryMessage input,
+#login .reset .worryMessage span {
+  visibility: visible;
+}
+#login .reset .worryMessage h3,
+#login .reset .worryMessage p,
+#login .reset .worryMessage input {
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+}
+.hidecontent {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+#login .reset .worryMessage .confirmMessage {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 1.5s 0.35s ease-in-out;
+}
+.hideConfirmMessage {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+#login .reset .worryMessage i {
+  padding: 15px;
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid green;
+  margin-bottom: 8px;
+  color: green;
+}
+#login .reset .worryMessage .confirmMessage p {
+  color: green;
+  font-size: 18px;
+}
+#login .reset .resetForm {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+.falseReset {
+  width: 0% !important;
+}
+#login .reset .resetForm form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#login .reset .resetForm form > div:nth-child(1),
+#login .reset .resetForm form > div:nth-child(2),
+#login .reset .resetForm form > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+#login .reset .resetForm form > div:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+#login .reset .resetForm form > div:nth-child(4) {
+  margin-top: 20px;
+}
+
+#login .reset .resetForm form div:nth-child(1) > div {
+  margin-top: 0;
+}
+#login .reset .resetForm form i {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+}
+#login .reset .resetForm form p {
+  transform: translateX(-40px);
+  font-weight: bold;
+}
+#login .reset .resetForm form label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#login .reset .resetForm form input {
+  width: 280px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 3px 0;
+}
+#login .reset .resetForm form button {
+  margin: 0 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  width: 90px;
+  padding: 5px;
+  font-weight: bold;
+}
+#login .reset .resetForm form button:first-child {
+  background-color: black;
+  color: white;
+}
+#login .reset .resetForm form button:last-child {
+  background-color: rgb(240, 136, 136);
+  color: white;
+}
+
+#login .errorAndReset {
+  position: relative;
+  margin: 0px 0 7px 0 !important;
+}
+
+#login .errorAndReset p {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+.editError {
+  margin-left: 10px;
+  position: unset !important;
+  align-self: flex-start !important;
+}
+#login .errorAndReset span {
+  margin-top: 0 !important;
+  margin-right: 20px;
+  align-self: flex-end;
+}

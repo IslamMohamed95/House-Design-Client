@@ -1,0 +1,1763 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh !important;
+  margin: 0;
+  padding: 0;
+}
+.Dir {
+  direction: rtl;
+}
+i:hover {
+  cursor: pointer;
+}
+
+.fw-bold {
+  font-weight: normal !important;
+}
+.fs-5 {
+  font-size: 15px !important;
+}
+.p-3 {
+  padding: 4px 0 !important;
+}
+@media (min-width: 320px) {
+  #question .btnCont {
+    height: 20%;
+  }
+  #view .mainCont {
+    min-height: 57.5vh;
+  }
+  .mainContHeight {
+    min-height: 85vh !important;
+  }
+
+  #view .editForm,
+  .activeCont {
+    min-height: 85vh !important;
+  }
+  .activeAdd,
+  .activeContract {
+    height: 50px !important;
+  }
+  .activeReg {
+    height: 55px !important;
+  }
+  .activeTable {
+    padding: 15px 0 !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div > div:first-child {
+    height: 144px;
+  }
+  #board > div:nth-child(1) > div:nth-child(3) > div:last-child h5 {
+    font-size: 21px !important;
+  }
+  #board .mobile {
+    display: none !important;
+  }
+  #login .activeLang {
+    padding: 2.5% !important;
+    height: 181% !important;
+    z-index: 20 !important;
+  }
+  #login footer {
+    padding-bottom: 6% !important;
+  }
+  .activeForm {
+    height: 25% !important;
+  }
+  #Designs img {
+    width: 95% !important;
+    height: 100% !important;
+    border-radius: none !important;
+  }
+  body {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .Hello h5 {
+    padding-left: 4%;
+  }
+  .Hello .arabHeader {
+    padding-right: 4%;
+  }
+  nav {
+    padding: 2% !important;
+  }
+  nav .logoData a {
+    width: 100%;
+  }
+  nav .logoData p {
+    padding: 1% 0;
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    margin-left: 1%;
+  }
+  nav .logoData p span:last-child {
+    font-size: 11px;
+  }
+  nav .logoData p span:first-child {
+    color: red;
+  }
+  nav .logoData p span:last-child {
+    font-weight: 500;
+    color: rgb(179, 179, 179);
+  }
+  #Nav .navIcon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(212, 44, 44);
+    font-size: 25px;
+    z-index: 1;
+  }
+  #Nav .navData {
+    width: 25%;
+  }
+  #Nav .area,
+  #Nav .message {
+    display: none;
+  }
+  #Nav #Logo {
+    font-size: 20px;
+  }
+  #Nav .mobNav li {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    transition: all 0.5s ease-in-out;
+  }
+  #Nav .mobNav .langL {
+    margin: 4% 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center !important;
+  }
+  #Nav .mobNav .langL i {
+    margin-right: 2%;
+  }
+  .Hello .warra-img ul li:nth-child(2)::before {
+    transform: translateX(22px);
+  }
+  #Nav ul li i {
+    color: red;
+    transition: all 0.5s ease-in-out;
+  }
+  #Nav .mobNav li:hover {
+    color: red !important;
+  }
+  #Nav .mobNav .langL:hover {
+    color: black !important;
+  }
+  .Content p {
+    margin: 5%;
+    font-size: 14px;
+  }
+  #Home .CoData {
+    position: unset;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 5% 0% 15% 0% !important;
+  }
+  #Home .CoData h5 {
+    font-size: 15px;
+    padding: 2% auto !important;
+  }
+  .Projects {
+    margin-top: 10%;
+  }
+  .Projects h5 {
+    padding-top: 7% !important;
+  }
+  .Projects h5:before {
+    height: 50% !important;
+    right: -3px !important;
+  }
+  .Projects > p {
+    width: 95% !important;
+    margin: 5% 0 1% 0 !important;
+  }
+  .Projects .row {
+    margin-bottom: 15%;
+    display: flex;
+    align-items: center;
+  }
+  .projHolder {
+    margin: 1% !important;
+    width: 98% !important;
+    height: 200px !important;
+  }
+  .ProjData > div:first-child {
+    width: 100% !important;
+  }
+  .Projects .pics .fa-heart {
+    position: absolute;
+    top: 95%;
+    left: 6%;
+    font-size: 30px !important;
+    z-index: 100 !important;
+  }
+  .ProjData img {
+    height: 100%;
+    width: 100%;
+    outline-offset: -10px !important;
+    outline: 5px double white !important;
+  }
+  .imgData {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgData > div:first-child {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imgData > div:first-child i {
+    margin-left: 2% !important;
+  }
+  .imgData button {
+    margin-top: 2%;
+    border: none;
+    border-radius: 15px;
+    padding: 2% 7%;
+    font-size: 15px;
+    background-color: rgb(150, 205, 241);
+    color: white;
+    font-weight: bold;
+  }
+  .imgData ul {
+    padding: 1% 1.5% !important;
+    list-style: none;
+    width: 75% !important;
+    font-size: 13px !important;
+  }
+  .imgData ul li:hover {
+    color: black;
+  }
+  .Hello .content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .Hello .map {
+    margin: 10% 0 5% 0;
+  }
+  .Hello .content > div:first-child {
+    width: 95% !important;
+  }
+  .Hello .content p {
+    padding: 1% 3% !important;
+  }
+  .Hello .ques > div:last-child {
+    width: 95% !important;
+  }
+  .Hello .warra-img {
+    margin-top: 5% !important;
+  }
+  .Hello .warra-img ul {
+    width: 100% !important;
+  }
+  .Hello .warra-img ul li {
+    font-size: 18px !important;
+  }
+  .Hello .warra-img ul li:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 0.5px;
+    height: 100%;
+    transform: translateX(28px);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .Hello .warra-img ul li:nth-child(2)::before {
+    left: -68% !important;
+  }
+  .Eval > div:first-child {
+    align-items: center !important;
+    justify-content: space-around !important;
+  }
+  .Eval > div:first-child > .mobView:nth-child(1) i {
+    color: rgb(243, 108, 108) !important;
+  }
+  .Eval > div:first-child > .mobView:nth-child(2) i {
+    color: rgb(234, 236, 119) !important;
+  }
+  .Eval > div:first-child > .mobView:nth-child(3) i {
+    color: rgb(139, 216, 139) !important;
+  }
+  .Desc .Eval {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-end !important  ;
+  }
+  .Desc .Eval .mobView {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Desc .Eval .mobView .des {
+    margin-top: 10% !important;
+    font-weight: bold;
+  }
+  .Desc .progress-cont {
+    width: 90px !important;
+    height: 90px !important;
+  }
+  .Desc .progress-cont i,
+  .Desc .progress-cont .fa-heart {
+    font-size: 20px !important;
+  }
+  .CEO > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .CEO > div a,
+  .CEO > div p {
+    margin: 1% 0;
+    color: black;
+  }
+  .CEO i {
+    padding: 6% !important;
+    font-size: 30px !important;
+    left: -10%;
+    top: 15% !important;
+  }
+  .CEO:nth-child(1) i,
+  .CEO:nth-child(4) i {
+    top: 7% !important  ;
+  }
+  .CEO:nth-child(2) i {
+    top: 25% !important;
+  }
+  .CEO > div a {
+    text-decoration: none !important;
+  }
+  .Mater > div .img > div:first-child {
+    font-size: 20px !important;
+  }
+  .Owners {
+    padding-bottom: 17% !important;
+  }
+  footer {
+    width: 100%;
+    padding: 1.5% 0 !important;
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 375px) {
+  #admin form {
+    width: 80% !important;
+  }
+  #view .editForm > div:last-child {
+    width: 60% !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(3) > div:last-child h5 {
+    font-size: 25px !important;
+  }
+  #board > div:first-child h6 {
+    font-size: 22px !important;
+  }
+  #board > div:nth-child(1) > div:first-child h5 {
+    font-size: 28px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div > div:first-child .state {
+    transform: translate(-60px, 18px) !important;
+  }
+  #question button,
+  #question a,
+  #question form div:last-child span {
+    padding: 2.5% 0 !important;
+  }
+  .Projects .filter button {
+    width: 110px !important;
+  }
+  nav .logoData p {
+    font-size: 13px;
+  }
+  .projHolder {
+    height: 250px !important;
+  }
+  .Owners {
+    padding-bottom: 15% !important;
+  }
+  .imgData > div:first-child i {
+    margin-left: 5% !important;
+  }
+  .Desc .progress-cont {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .Projects .row {
+    margin-bottom: 8%;
+  }
+}
+@media (min-width: 425px) {
+  #board > div:nth-child(1) > div:first-child > div {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+  #board > div:nth-child(1) > div:first-child > div > span {
+    margin-left: 5px;
+    width: 90px !important;
+  }
+  #board > div:nth-child(3) > div:first-child h5 {
+    font-size: 30px !important;
+  }
+  #login footer {
+    padding-bottom: 4.5% !important;
+  }
+  .activeLang {
+    height: 200% !important;
+  }
+  .activeForm {
+    width: 85% !important;
+  }
+
+  #question form p {
+    font-size: 19px !important;
+    margin-bottom: 7% !important;
+  }
+  nav .logoData p {
+    font-size: 14px;
+  }
+  .Projects {
+    margin-top: 7%;
+  }
+  .projHolder {
+    height: 280px !important;
+  }
+  #Nav img {
+    width: 18% !important;
+  }
+  .Desc .progress-cont {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .Desc .progress-cont i,
+  .Desc .progress-cont .fa-heart {
+    font-size: 30px !important;
+  }
+  .Hello .warra-img ul {
+    width: 75% !important;
+  }
+  .CEO > div p:first-child {
+    font-size: 16px !important;
+  }
+  .CEO > div a {
+    font-size: 18px !important;
+  }
+  .CEO .salesDep p:last-child {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 768px) {
+  #login .lastHeader {
+    margin-bottom: 2rem !important;
+  }
+  #login > div:first-child form {
+    padding: 0% !important;
+  }
+  #dashNav a h6 {
+    font-size: 30px !important;
+  }
+  #dashNav > div:first-child > div {
+    margin-right: 5px;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  #board > div:nth-child(1) {
+    transform: translate(0, 65px) !important;
+  }
+  #board > div:nth-child(1) > div:first-child h5 {
+    font-size: 45px !important;
+  }
+  #board > div:nth-child(1) > div:first-child p {
+    font-size: 18px !important;
+  }
+  #board > div:nth-child(1) > div:first-child span,
+  #board > div:nth-child(1) > div:first-child a span p {
+    font-size: 22px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(2) > div > div h2 {
+    font-size: 30px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(2) > div > div span {
+    font-size: 40px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(2) > div p {
+    font-size: 20px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(3) > div:last-child h5 {
+    font-size: 40px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(3) > div:last-child > div span {
+    font-size: 25px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(3) > div:first-child {
+    width: 40% !important;
+    transform: translateX(50px);
+  }
+  #board > div:nth-child(1) > div:nth-child(4) section span {
+    width: 130px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) section select {
+    width: 160px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) span p,
+  #board > div:nth-child(1) > div:nth-child(4) section select {
+    font-size: 22px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div > div:first-child {
+    height: 240px;
+    padding: 28px 0 9px 26px !important;
+  }
+  .activeTable {
+    padding: 19px 0 !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div h5 {
+    font-size: 40px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div .fa-angle-down {
+    font-size: 30px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div > div:first-child a {
+    left: 115px !important;
+    font-size: 26px !important;
+    top: 7px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div p span {
+    font-size: 22px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div p {
+    font-size: 22px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) .userData table td,
+  #board > div:nth-child(1) > div:nth-child(4) .userData table th {
+    font-size: 20px !important;
+  }
+  #contract > div {
+    margin-top: 60px !important;
+  }
+  #contract #formCont form .blockCont > div:nth-child(1) i {
+    font-size: 100px !important;
+    margin: 0 10px 10px 10px;
+  }
+  #contract #formCont form .blockCont > div:nth-child(1) h4 {
+    font-size: 30px !important;
+  }
+  #contract #formCont form > div > div > div label {
+    font-size: 25px !important;
+  }
+  #contract #formCont form > div > div > div input,
+  #contract #formCont form > div > div > div select {
+    font-size: 20px !important;
+  }
+  #contract #formCont form .blockCont > div:nth-child(1) .fa-plus {
+    font-size: 50px !important;
+  }
+  #contract > div > select {
+    font-size: 25px !important;
+    width: 210px !important;
+  }
+  .activeReg {
+    height: 77px !important;
+  }
+  #contract #formCont form > div {
+    padding: 20px !important;
+  }
+  #contract #formCont form .btnAdd button,
+  #contract #formCont form .btnContract button {
+    font-size: 25px !important;
+    width: 160px !important;
+  }
+  .activeAdd,
+  .activeContract {
+    height: 62px !important;
+  }
+  #contract #formCont form .btnAdd,
+  #contract #formCont form .btnContract {
+    width: 50% !important;
+  }
+  #view > div {
+    min-height: 88.5vh !important;
+  }
+  #view > div > div:nth-child(2) button {
+    font-size: 22px !important;
+    margin-bottom: 10px !important;
+    width: 150px !important;
+  }
+  #board > div:nth-child(1) > div:nth-child(4) > div p span #login .lang {
+    transform: translateY(-20%) !important;
+  }
+  #login .activeLang {
+    height: 175% !important;
+    padding: 1% !important;
+  }
+  #login h2 {
+    font-size: 30px !important;
+  }
+  #login > div:first-child > p {
+    margin-bottom: 3% !important;
+  }
+  #login > div:first-child form {
+    width: 80%;
+  }
+  #login > div:first-child form > div label {
+    font-size: 28px !important;
+  }
+  #login footer {
+    padding-bottom: 2.5% !important;
+  }
+  #question button,
+  #question a,
+  #question form div:last-child span {
+    padding: 2% 0 !important;
+    font-size: 18px !important;
+    width: 100px !important;
+  }
+  #question .btnCont {
+    padding: 2.5% 0 !important;
+    width: 45% !important;
+  }
+  #view .mainCont {
+    min-height: 55vh;
+    padding: 25px !important;
+    width: 85% !important;
+  }
+  #view > div {
+    transform: translateY(70px) !important;
+  }
+  #view > div > div:first-child h4 {
+    font-size: 40px !important;
+  }
+  #view > div > div:first-child p {
+    font-size: 25px !important;
+  }
+  #view .mainCont > div:first-child {
+    width: 95%;
+  }
+  #view .mainCont > div > div > div {
+    justify-content: space-between !important;
+  }
+  #view .mainCont .perform > div:first-child {
+    width: 100%;
+  }
+  #view .mainCont .perform > div > div:first-child {
+    width: 55%;
+  }
+  #view .per {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+  #view .mainCont > div > div > div > div {
+    width: 50%;
+  }
+  #view .performance {
+    width: 20% !important;
+  }
+  #view .performance > div {
+    transform: translateX(-40px);
+  }
+  #view label {
+    font-size: 20px !important;
+  }
+  #view .mainCont > div > div > div input {
+    font-size: 18px !important;
+  }
+  .activeCont,
+  #view .editForm {
+    min-height: 65vh !important;
+  }
+
+  #question .btnCont form {
+    width: 80% !important;
+  }
+  .activeForm {
+    width: 85% !important;
+  }
+
+  #Home .black,
+  .Projects .black,
+  .Hello .black {
+    width: 30% !important;
+  }
+  .Job .categ {
+    border-radius: 15px !important;
+    margin: 3% 0;
+  }
+  #second {
+    margin-bottom: 8% !important;
+  }
+  #second > div h2 {
+    margin-bottom: 1% !important;
+  }
+
+  #second > div .arabPara {
+    margin: 3% 0 !important;
+  }
+  #second .profile > div {
+    padding: 0.5% 0 !important;
+  }
+  #second .profile a p {
+    font-size: 18px !important;
+  }
+  .Job .categContainer {
+    margin: 5% 0 !important;
+  }
+  .module h1 {
+    margin-bottom: 2% !important;
+  }
+  .module .blockContainer {
+    margin-top: 0% !important;
+    padding: 0 !important;
+  }
+  .module .blockContainer .block {
+    width: 65% !important;
+    padding: 3% !important;
+  }
+  #Home .building h4 {
+    margin-bottom: 2% !important;
+  }
+  #Home .building .black {
+    margin: 0% 0 5% 0 !important;
+  }
+  .building > div > div:nth-child(2) > i {
+    font-size: 80px !important;
+  }
+  .building > div > div:nth-child(3) > i,
+  .building > div > div:nth-child(1) > i {
+    font-size: 60px !important;
+  }
+  #Home .Contact {
+    padding: 5% 0 !important;
+  }
+  #Home .Contact h4 {
+    margin-bottom: 2% !important;
+  }
+  #Home .Contact form button {
+    padding: 1% 0 !important;
+    width: 100px !important;
+  }
+  #Home .Contact form {
+    width: 75% !important;
+  }
+  .Projects h1 {
+    margin: 8% 0 3% 0 !important;
+  }
+  .Projects .filter {
+    width: 75% !important;
+    margin: 5% 0 3% !important;
+  }
+  .Projects .filter button {
+    padding: 1.5% !important;
+    width: 120px !important;
+  }
+  .Hello .splitter {
+    height: 350px !important;
+  }
+  .Hello .ques {
+    margin-top: 5% !important;
+  }
+  .Hello .ques h2 {
+    margin-bottom: 2%;
+  }
+  .Hello .warranty {
+    padding: 5% 8% !important;
+  }
+  #Nav .navData {
+    margin-right: 0.5%;
+    width: 320%;
+  }
+  .listTab {
+    width: 100%;
+  }
+  .Projects .row {
+    margin-bottom: 4%;
+  }
+
+  #Nav {
+    padding: 1% !important;
+  }
+  #Nav .area,
+  #Nav .message {
+    display: flex;
+  }
+  .arabMap {
+    margin-right: 0 !important;
+    margin-left: 10% !important;
+  }
+  .Projects > p {
+    margin-top: 3% !important;
+  }
+  .Content .arabPara {
+    padding-right: 4%;
+  }
+  #Home .CoData {
+    margin-top: 2% !important;
+    padding: 5% 0% 7% 0% !important;
+  }
+  nav {
+    justify-content: space-between !important;
+  }
+  #Nav img {
+    width: 18% !important;
+    margin-left: 0.5%;
+  }
+  #Home .CoData h5 {
+    font-size: 15px;
+  }
+  .Projects {
+    margin-top: 2%;
+  }
+  .ProjCont {
+    flex-direction: row !important;
+  }
+  .projHolder {
+    width: 45% !important;
+  }
+  .projHolder img {
+    width: 220px !important;
+    height: 100% !important;
+  }
+  .Projects .arabHeader {
+    margin-top: 2% !important;
+  }
+  .Projects .imgData .fa-heart {
+    text-align: center !important;
+    width: 18% !important;
+    position: unset;
+    top: unset;
+    left: unset;
+    font-size: 40px !important;
+  }
+  .ProjData > div:first-child {
+    transform: translateY(5%);
+    width: 75% !important;
+  }
+  .ProjData img {
+    outline-offset: -25px !important;
+    outline: 10px double white !important;
+  }
+  .imgData {
+    display: flex;
+    flex-direction: row;
+  }
+  .Hello .warra-img ul li:nth-child(2)::before {
+    left: -75% !important;
+  }
+  .imgData ul {
+    padding: 1% 2% !important;
+    list-style: none;
+    width: 100% !important;
+    font-size: 17px !important;
+  }
+  .Hello .content {
+    flex-direction: row !important;
+  }
+  .Hello .content > div:first-child {
+    width: 60% !important;
+    margin-top: 2% !important;
+  }
+  .Hello .map {
+    margin-top: 3% !important;
+    margin-right: 10%;
+    margin-bottom: 0 !important;
+  }
+  .CoData .col-6 {
+    padding: 0 1% !important;
+    width: fit-content;
+  }
+  .Projects h5 {
+    padding-top: 8.5% !important;
+  }
+  .Hello .ques img {
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 1);
+  }
+  .Hello .warra-img ul {
+    width: 45% !important;
+    font-size: 18px;
+    margin-bottom: 0 !important;
+  }
+  .Desc .Eval {
+    flex-direction: row-reverse !important;
+  }
+  .Desc .progress-cont {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  .Hello .warra-img {
+    margin-top: 4% !important;
+  }
+  .Desc .Eval {
+    padding: 1% !important;
+  }
+  .Owners {
+    padding-bottom: 9% !important;
+  }
+  .Owners > div:first-child {
+    width: 95% !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .CEO {
+    padding: 2% !important;
+    outline: 2px solid white;
+    outline-offset: 1px;
+    width: 23.95% !important;
+    margin: 0 !important;
+  }
+  .CEO div:first-child {
+    flex-direction: column !important;
+  }
+  .CEO > div p:first-child {
+    font-size: 14px !important;
+  }
+  .CEO > div a {
+    font-size: 16px !important;
+  }
+  .CEO .salesDep p:last-child {
+    font-size: 12px !important;
+  }
+  .activeLang {
+    height: 125% !important;
+  }
+  .CEO {
+    height: 170px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .CEO p {
+    width: 100%;
+  }
+  footer {
+    padding: 1% !important;
+  }
+  .mail form {
+    width: 50% !important;
+    padding: 3% 5% !important;
+  }
+  .mail form label {
+    font-size: 20px !important;
+  }
+  .mail form input {
+    font-size: 18px !important;
+    padding: 0.5% !important;
+  }
+  #Designs {
+    padding-top: 10% !important;
+  }
+  #Designs h4 {
+    font-size: 18px !important;
+    margin: 1% 0 3% 0 !important;
+  }
+}
+@media (min-width: 1024px) {
+  #login .lastHeader {
+    margin-bottom: 0.5em !important;
+  }
+  #login .lang {
+    margin-top: 0.5rem !important;
+  }
+  .boardCont .boardView .eval .performance .circleProgress {
+    width: 40% !important;
+  }
+  #login > div:first-child form > div input {
+    background-color: white !important;
+  }
+  #login .activeLang {
+    padding: 2% 3% !important;
+    height: 165% !important;
+    z-index: 4 !important;
+  }
+  #login ul hr {
+    margin: 10% 0 !important;
+  }
+  #login .shadow {
+    align-self: center;
+    margin: 0 auto;
+    width: 95%;
+    height: 93%;
+    overflow: hidden;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 50% !important;
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    padding: 0 !important;
+    border-radius: 30px;
+    z-index: 1;
+  }
+  #login .shadow > div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: none !important;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  #login .shadow > div:first-child {
+    width: 100%;
+    height: 100%;
+    box-shadow: none !important;
+    border: none !important;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../src/assets/Login/BG.jpg");
+  }
+  #login .shadow > div:last-child {
+    direction: ltr !important;
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+  }
+  #login .shadow > div:last-child::after {
+    content: "";
+    display: block;
+    position: fixed;
+    border-radius: 0% 70%;
+    width: 550px;
+    height: 250px;
+
+    background-color: white;
+    bottom: 0;
+    transform: translate(-95px, 120px);
+    z-index: 5;
+  }
+  #login > div:first-child {
+    transform: translateX(65%);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    width: 40% !important;
+    height: 85% !important;
+  }
+  #login .company {
+    bottom: 3%;
+    left: 2%;
+    position: absolute;
+    z-index: 2;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  #login .company div {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+  }
+  #login .company img {
+    width: 15% !important;
+  }
+  #login .company p {
+    font-weight: bold;
+    text-decoration: none !important;
+    font-size: 18px;
+    width: fit-content !important;
+    margin: 0;
+  }
+  #login .company p span:first-child {
+    color: red;
+  }
+  #login .company p span:last-child {
+    color: rgb(180, 180, 180);
+  }
+  #login footer {
+    transform: translate(26%, -50px);
+    z-index: 3 !important;
+  }
+  #question .btnCont {
+    padding: 2% 0 !important;
+    width: 35% !important;
+  }
+
+  #question .btnCont form {
+    width: 75% !important;
+  }
+  #question .btnCont form p {
+    font-size: 22px !important;
+  }
+  .Owners h2 {
+    font-size: 30px !important;
+    margin-bottom: 2% !important;
+  }
+  #Designs img {
+    border-radius: 25px !important;
+  }
+  .Job .categ img {
+    width: 900px !important;
+  }
+  .building > div {
+    width: 80% !important;
+  }
+  .Hello .warranty h2,
+  .Hello .Desc h2 {
+    font-size: 30px !important;
+  }
+  .Hello .black {
+    margin-bottom: 5% !important;
+  }
+  #Home #Images p {
+    font-size: 30px !important;
+  }
+  #Images .iconDown > div {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  #Images .iconDown i {
+    font-size: 25px !important;
+  }
+  #second {
+    margin-bottom: 3% !important;
+  }
+  #second p {
+    font-size: 18px !important;
+  }
+  #second img {
+    width: 70% !important;
+  }
+  #second .end {
+    display: none !important;
+  }
+  #Home .module {
+    padding: 5% 0 !important;
+  }
+  #Home .module .blockContainer {
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .module .blockContainer .block {
+    width: 32% !important;
+    height: 300px;
+    padding: 2% !important;
+  }
+  #Home .building {
+    padding: 0 !important;
+  }
+  #Home .building {
+    margin-bottom: 3% !important;
+  }
+  #Home .Contact {
+    padding: 3% 0 !important;
+  }
+  #Home .Contact .black {
+    margin-bottom: 2% !important;
+  }
+  #Home .Contact form label {
+    font-size: 20px !important;
+  }
+  #Home .Contact form button {
+    font-size: 18px !important;
+  }
+  .Hello .splitter {
+    height: 500px !important;
+  }
+  .Hello .splitter p span {
+    font-size: 2em !important;
+  }
+  .Hello .ques {
+    margin-top: 5% !important;
+  }
+  .Hello .ques h2 {
+    margin-bottom: 2%;
+    font-weight: bold !important;
+  }
+  .Hello .ques p {
+    font-size: 20px !important;
+  }
+  .warranty h2,
+  .Desc h2 {
+    margin-bottom: 2% !important;
+  }
+  .warranty p {
+    font-size: 27px !important;
+  }
+  .Projects p {
+    font-size: 20px !important;
+  }
+  .Projects .filter {
+    width: 60% !important;
+  }
+  nav .logoData p {
+    font-size: 16px;
+  }
+  #Nav img {
+    width: 11% !important;
+  }
+  #Nav ul li {
+    white-space: nowrap;
+  }
+  #Nav .navData {
+    margin-right: 0 !important;
+  }
+  #Nav .logoData {
+    width: 100% !important;
+  }
+  nav .activeLang {
+    height: 100% !important;
+  }
+  .Hello .ques > div:first-child .imgArabPos1 {
+    left: 260px !important;
+  }
+  .Hello .ques > div:first-child .imgArabPos3 {
+    left: 150px !important;
+  }
+  .Hello .ques > div:first-child .imgArabPos2 {
+    left: 50px !important;
+  }
+  .Hello .warra-img ul {
+    width: 35% !important;
+  }
+  .Hello .warra-img ul li:nth-child(2)::before {
+    left: -80% !important;
+  }
+  .Desc .progress-cont {
+    width: 165px !important;
+    height: 165px !important;
+  }
+  .CEO {
+    width: 24% !important;
+  }
+  .CEO > div p:first-child {
+    font-size: 16px !important;
+  }
+  .CEO .salesDep p:last-child {
+    font-size: 13.5px !important;
+  }
+  .Projects h5 {
+    padding-left: 3% !important;
+  }
+  .Projects .arabHeader {
+    padding: 4% 2% 0 2% !important;
+  }
+  .CoData .col-6 {
+    padding: 0 4% !important;
+  }
+  .projHolder {
+    height: 350px !important;
+  }
+  .projHolder p {
+    font-size: 20px !important;
+  }
+  .projHolder i {
+    font-size: 40px !important;
+  }
+  .Desc .Eval {
+    width: 80% !important;
+  }
+  .building > div > div:nth-child(2) a .fa-place-of-worship {
+    font-size: 7em !important;
+    margin-bottom: 2%;
+  }
+  .building > div > div:nth-child(1) a .fa-place-of-worship,
+  .building > div > div:nth-child(3) a .fa-place-of-worship {
+    font-size: 5em !important;
+    margin-bottom: 2%;
+  }
+  .building > div > div:nth-child(1) a h6,
+  .building > div > div:nth-child(3) a h6 {
+    font-size: 1.2em;
+  }
+  .building > div > div:nth-child(2) a h6 {
+    font-size: 1.2em;
+  }
+  .building > div > div p {
+    color: rgba(255, 0, 0, 0.5);
+  }
+  .mail form {
+    width: 45% !important;
+    padding: 3% 5% !important;
+  }
+  .mail form label {
+    font-size: 20px !important;
+  }
+  .mail form input {
+    font-size: 18px !important;
+    padding: 0.5% !important;
+  }
+}
+@media (min-width: 1440px) {
+  #Nav .navData {
+    width: 100%;
+  }
+  .boardCont .boardView .tableView {
+    max-height: 40% !important;
+  }
+
+  .boardCont .newContract .clientInfo form .infoCont > div label,
+  .boardCont .newContract .contract form .infoCont > div label {
+    margin-bottom: 5px !important;
+    font-size: 22px !important;
+  }
+  .boardCont .newContract .clientInfo form .infoCont > div input,
+  .boardCont .newContract .contract form .infoCont > div input {
+    font-size: 20px !important;
+  }
+  .boardCont .boardView .eval .chart {
+    width: 40% !important;
+  }
+  .boardCont .boardView .eval .performance .circleProgress {
+    width: 30% !important;
+  }
+  #desktopCont .listCont {
+    width: 15vw !important;
+  }
+  #desktopCont .boardCont {
+    width: 83vw !important;
+  }
+  #login .activeLang {
+    height: 50px !important;
+    padding: 2% !important;
+  }
+  #login > div:first-child form {
+    padding: 1.5% 0 3.7% 0 !important;
+  }
+  #login h2 {
+    margin-bottom: 25px !important;
+  }
+  #login > div:first-child > p {
+    margin-bottom: 0 !important;
+  }
+  #login > div:first-child {
+    width: 35% !important;
+    transform: translateX(70%) !important;
+  }
+  #login .activeLang {
+    height: 78px !important;
+  }
+  #login footer {
+    transform: translate(24.5%, -50px);
+  }
+  #question button,
+  #question a,
+  #question form div:last-child span {
+    width: 30% !important;
+  }
+  #question .btnCont {
+    padding: 1.2% 0 !important;
+    width: 25% !important;
+  }
+  #question .btnCont form {
+    width: 70% !important;
+  }
+  #Company .splitter {
+    height: 750px !important;
+  }
+  .Job .categ img {
+    width: 1000px !important;
+  }
+  .projHolder p {
+    font-size: 30px !important;
+  }
+  .projHolder i {
+    font-size: 50px !important;
+  }
+  #Home .black,
+  .Projects .black,
+  .Hello .black,
+  #Designs .black {
+    width: 20% !important;
+  }
+  #second {
+    margin-top: 3% !important;
+  }
+  #second h4 {
+    margin-top: 1.5% !important;
+    font-size: 23px !important;
+  }
+  #second p {
+    font-size: 22px !important;
+    margin: 1% 0 !important;
+  }
+  #second img {
+    width: 50% !important;
+  }
+  #second .profile > div {
+    width: 25% !important;
+  }
+  #second .profile > div p {
+    font-size: 25px !important;
+    padding: 0 !important;
+  }
+  #second .profile > div {
+    padding: 0.1% !important;
+  }
+  #second .profile a {
+    padding: 0 !important;
+  }
+  .module .blockContainer .block {
+    width: 25% !important;
+  }
+  .building > div > div:nth-child(2) a .fa-place-of-worship {
+    font-size: 15em !important;
+  }
+  .building > div > div:nth-child(1) a .fa-place-of-worship,
+  .building > div > div:nth-child(3) a .fa-place-of-worship {
+    font-size: 11em !important;
+  }
+  .building > div > div:nth-child(1) a h6,
+  .building > div > div:nth-child(3) a h6 {
+    font-size: 2em;
+  }
+  .building > div > div:nth-child(2) a h6 {
+    font-size: 2em;
+  }
+  .building > div div p {
+    font-size: 1.5em;
+  }
+  .building > div div p i {
+    font-size: 1.5em !important;
+  }
+  .building > div > div:nth-child(2) > i {
+    font-size: 100px !important;
+  }
+  .building > div > div:nth-child(3) > i,
+  .building > div > div:nth-child(1) > i {
+    font-size: 80px !important;
+  }
+  #second > div h2,
+  .module h1,
+  .Job h2,
+  .building h4,
+  #Home .Contact h4,
+  .Hello .ques h2,
+  .Hello .warranty h2,
+  .Hello .Desc h2,
+  .Owners h2 {
+    font-size: 2.5em !important;
+  }
+  #Home .CoData {
+    margin-top: 0 !important;
+  }
+  .Job .categContainer {
+    margin: 0 0 2% 0 !important;
+  }
+  #Home .Contact form {
+    width: 65% !important;
+  }
+  #Home .Contact form label {
+    font-size: 25px !important;
+  }
+  #Home .Contact form button {
+    width: 150px !important;
+    font-size: 20px !important;
+  }
+  .Projects h1 {
+    font-size: 2.3em !important;
+    margin: 5% 0 2% 0 !important;
+  }
+  .Projects > p {
+    font-size: 25px !important;
+  }
+  .Projects .filter {
+    margin: 2% 0 !important;
+  }
+  .Projects .filter {
+    width: 50% !important;
+  }
+  .ProjCont {
+    width: 100% !important;
+  }
+  .projHolder {
+    height: 400px !important;
+    margin: 0.5% !important;
+    width: 32% !important;
+  }
+  .Hello .ques {
+    margin-top: 5% !important;
+  }
+  .Hello .ques h2 {
+    margin-bottom: 2%;
+  }
+  .Hello .ques .imageCont {
+    padding: 3% 1% !important;
+  }
+  .Hello .ques .black {
+    margin-bottom: 1% !important;
+  }
+  .Hello .ques p {
+    font-size: 25px !important;
+  }
+  .Desc {
+    margin-bottom: 3% !important;
+  }
+  nav .logoData p {
+    font-size: 18px;
+  }
+  .Hello .warra-img ul li:nth-child(2)::before {
+    transform: translateX(45px);
+  }
+
+  #Nav .link {
+    margin-right: 2% !important;
+  }
+  #Nav {
+    padding: 0.7% 1.5% !important;
+  }
+  #Nav #Logo {
+    font-size: 25px;
+  }
+  .area,
+  .message {
+    font-size: 20px;
+  }
+  #Home .Content p {
+    padding-left: 2% !important;
+  }
+  .listTab li a {
+    font-size: 24px !important;
+  }
+  .Content .arabPara {
+    padding-right: 2%;
+  }
+  .Content p::before {
+    height: 84% !important;
+  }
+  .Content > p:first-child {
+    width: 95% !important;
+    font-size: 18px;
+  }
+  .Content .Triangle > div {
+    font-size: 20px !important;
+    padding: 1% 3%;
+  }
+  .Content .Triangle > div:first-child {
+    width: 175px !important;
+  }
+  .Content .Triangle > div:nth-child(2) {
+    width: 220px !important;
+  }
+  .CoData {
+    padding: 3% 0% 4% 3% !important;
+  }
+  .CoData > div h5 {
+    font-size: 1.5em !important;
+  }
+  .CoData .fa-facebook,
+  .CoData .fa-instagram {
+    font-size: 1.5em !important;
+  }
+  .CoData .loca {
+    font-weight: bold;
+  }
+  .CoData .fa-instagram {
+    margin: 0 10% !important;
+  }
+  .CoData a {
+    font-size: 1.5em !important;
+  }
+  .CoData a i {
+    font-size: 1em !important;
+  }
+  .CoData > div p {
+    font-size: 16px !important;
+  }
+  .Projects .filter button {
+    font-size: 28px !important;
+    width: 180px !important;
+  }
+  .CoData > div:last-child > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .CoData > div:last-child > div span {
+    font-size: 20px;
+  }
+  .CoData > div i {
+    font-size: 30px;
+  }
+  .CoData > div:last-child > div:last-child a {
+    margin-right: 3% !important;
+  }
+  footer {
+    font-size: 18px !important;
+    padding: 0.6% 0 !important;
+  }
+  .Hello .content {
+    padding-top: 3% !important;
+  }
+  .Hello .content > div:first-child h5 {
+    font-size: 30px !important;
+  }
+  .Hello .content > div:first-child p {
+    font-size: 18px !important;
+  }
+  .Hello .content .map {
+    width: 200px;
+    height: 200px;
+  }
+  .Hello .ques label,
+  .Hello .warranty label {
+    font-size: 20px !important;
+  }
+  .Desc .progress-cont {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .Desc .progress-cont p {
+    font-size: 21px !important;
+  }
+  .Desc .progress-cont i,
+  .Desc .progress-cont .fa-heart {
+    font-size: 45px !important;
+  }
+  .headLines li {
+    font-size: 25px !important;
+  }
+  .Mater > div .img {
+    width: 280px !important;
+  }
+  .Mater > div .img > div:first-child {
+    font-size: 30px !important;
+  }
+  .Hello .warra-img ul li {
+    font-size: 25px !important;
+  }
+  .Hello .arabHeader {
+    padding-right: 3%;
+  }
+  .Owners {
+    padding: 5% 3% 7% 3% !important;
+  }
+  .CEO {
+    height: 220px !important;
+  }
+  .CEO > div p:first-child {
+    font-size: 1.3em !important;
+  }
+  .CEO > div a {
+    font-size: 1.2em !important;
+  }
+  .Desc .Eval {
+    padding: 0 !important;
+  }
+  .CEO .salesDep p:last-child {
+    font-size: 1.1em !important;
+  }
+  .Projects h5 {
+    font-size: 25px !important;
+    padding-top: 4% !important;
+  }
+  .Projects > p {
+    margin-top: 2% !important;
+  }
+  .ProjCont {
+    margin-bottom: 5% !important;
+  }
+  .ProjData > div:first-child {
+    width: 50% !important;
+  }
+  .mail form {
+    width: 45% !important;
+  }
+  .Triangle div:nth-child(3) {
+    width: 260px !important;
+  }
+  #Designs {
+    padding-top: 7% !important;
+  }
+  #Designs h1 {
+    font-size: 40px;
+    margin-bottom: 1%;
+  }
+  #Designs h4 {
+    font-size: 22px !important;
+    margin: 1% 0 3% 0 !important;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@media print {
+  @page {
+    size: landscape;
+  }
+
+  .visitorList,
+  .fa-angle-left {
+    display: none;
+  }
+  table {
+    width: 100vw;
+  }
+  .statusOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  th {
+    font-size: 15px;
+    padding: 4px 0;
+  }
+  .needed {
+    border: none;
+    display: inline !important;
+  }
+  th,
+  tr,
+  td {
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 13px;
+  }
+  .deletePrintedSales {
+    display: none;
+  }
+}

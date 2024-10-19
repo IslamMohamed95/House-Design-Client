@@ -1,0 +1,381 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1% 1.5%;
+  z-index: 50;
+}
+
+nav .logoData a {
+  text-decoration: none;
+}
+
+.area,
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5000;
+}
+
+.listTab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  z-index: 1;
+  justify-content: space-around;
+}
+
+.listTab li {
+  position: relative;
+}
+
+.listTab li a {
+  font-size: 18px;
+  color: white !important;
+  font-weight: bold;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.listTab li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: -3px;
+  left: -10px;
+  background-color: darkorange;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.listTab li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  right: -10px;
+  background-color: darkorange;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.listTab li:hover a::after,
+.listTab li:hover a::before {
+  width: 30%;
+}
+
+.listTab li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 0;
+  width: 2px;
+  background-color: darkorange;
+
+  transform-origin: top left;
+  transition: all 0.5s ease-in-out;
+}
+
+.listTab li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  height: 0;
+  width: 2px;
+  background-color: darkorange;
+
+  transform-origin: bottom right;
+  transition: all 0.5s ease-in-out;
+}
+
+.listTab li:hover::before {
+  height: 50% !important;
+}
+
+.listTab li:hover::after {
+  height: 50% !important;
+}
+
+.areaArabic {
+  direction: rtl;
+}
+
+.langList {
+  position: absolute;
+  display: flex;
+  height: 0;
+  right: 2%;
+  padding: 0% !important;
+  visibility: hidden;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  top: 65% !important;
+  list-style: none;
+  z-index: 1;
+  background-color: rgba(231, 231, 231, 0.7);
+
+  transition: all 0.3s ease-in-out !important;
+}
+
+#Nav {
+  display: flex;
+  align-items: center;
+}
+
+#Nav .mobNav {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateX(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.activeMobNav {
+  transform: translateX(0%) !important;
+}
+
+.mobNav li {
+  margin: 10px 0;
+  white-space: nowrap;
+}
+
+.mobContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeMobContainer {
+  width: 100% !important;
+}
+
+.langMobList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  top: 63.2%;
+  height: 0;
+  overflow: hidden;
+  right: 35%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  visibility: hidden;
+  padding: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.activeMobList {
+  height: 10% !important;
+  padding: 4% !important;
+  visibility: visible !important;
+}
+
+.langMobList hr {
+  color: grey;
+  margin: 10% 0;
+}
+
+.langList hr {
+  margin: 10% 0;
+  color: darkred;
+}
+
+.langMobList li {
+  color: white !important;
+  font-size: 14px !important;
+  margin: 1% 0;
+}
+
+.fa-globe:hover {
+  cursor: unset;
+}
+
+.activeLang {
+  padding: 0.5% 1% !important;
+  visibility: visible !important;
+  height: 100%;
+}
+
+.langList li {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.langList li:hover {
+  color: white;
+}
+
+.area span {
+  margin-left: 10%;
+  font-size: 15px;
+  color: white;
+  font-weight: light;
+  transition: all 0.2s ease-in-out;
+}
+
+.area i {
+  color: red;
+}
+
+.lang-Cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang-Cont i {
+  font-size: 18px;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lang-Cont p {
+  line-height: unset;
+  font-size: 10px;
+  color: white;
+  margin: 0;
+  opacity: 0.52;
+}
+
+ul a:last-child > li {
+  display: flex;
+  align-items: center;
+}
+
+ul a:last-child > li i {
+  margin-right: 8%;
+}
+
+ul a:last-child > li .long-Cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+ul a:last-child > li span {
+  font-size: 18px;
+}
+
+ul li p {
+  font-size: 11px;
+  margin: 0;
+  opacity: 0.6;
+}
+
+.lang i {
+  margin-left: 8%;
+}
+
+.lang-Cont > i {
+  margin-left: 15%;
+}
+
+.message i {
+  font-size: 20px;
+  color: rgb(107, 107, 243);
+}
+.message span {
+  color: white;
+  font-size: 15px;
+  margin-left: 10%;
+  font-weight: light;
+  transition: all 0.2s ease-in-out;
+}
+
+.message:hover span,
+.area:hover span {
+  font-weight: bold !important;
+  cursor: pointer;
+}
+
+#Nav img {
+  width: 17%;
+}
+
+#Nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+#Nav ul a,
+.mobNav a {
+  text-decoration: none;
+}
+.mobNav a {
+  color: black;
+  font-weight: bold;
+  margin: 2px 0 !important;
+  font-size: 20px;
+}
+
+#Nav .link {
+  text-decoration: none;
+  margin-right: 25%;
+}
+
+#Nav .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Nav .contact li {
+  transition: all 0.5s ease-in-out;
+}
+
+#Nav .contact i {
+  font-size: 22px;
+  margin-right: 7%;
+
+  transition: all 0.5s ease-in-out;
+}
+
+#Nav .contact:hover i {
+  color: black;
+}
+
+#Nav .contact:hover li {
+  color: rgb(107, 107, 243) !important;
+}

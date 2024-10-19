@@ -1,0 +1,694 @@
+.Dir {
+  direction: rtl;
+}
+
+#Home {
+  width: 100%;
+  min-height: 100vh !important;
+}
+
+.shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+#Images .iconDown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 3%;
+  text-decoration: none;
+  z-index: 10;
+}
+
+#Images .iconDown p {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0;
+  font-family: monospace;
+}
+
+#Images .iconDown > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+#Images .iconDown i {
+  color: red;
+
+  animation: arrowAnime 0.3s linear 0s infinite alternate;
+}
+
+@keyframes arrowAnime {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+
+#second {
+  margin: 6% 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#second > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#second > div .black {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3px;
+  width: 50%;
+  background-color: black;
+}
+#second > div .black .red {
+  position: absolute;
+
+  width: 30%;
+  height: 6px;
+  background-color: red;
+  z-index: 5;
+}
+#second > div .black,
+#second > div .black .red {
+  border-radius: 20px;
+}
+#second h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#second h4 {
+  font-weight: bold;
+  margin: 0%;
+  font-size: 18px;
+  margin-top: 3%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#second > p,
+#second .arabPara {
+  width: 90%;
+  word-spacing: 1mm;
+  word-wrap: unset;
+  word-break: keep-all;
+  position: relative;
+}
+#second img {
+  width: 100%;
+}
+#second .profile {
+  position: relative;
+  width: 90%;
+  margin-bottom: 2%;
+}
+#second .profile > div {
+  padding: 1% 0;
+  text-align: center;
+  position: relative;
+  width: 35%;
+  background-color: rgb(219, 219, 219);
+  border-top-left-radius: unset;
+  border-top-right-radius: 5px;
+}
+#second .profile a {
+  text-decoration: none;
+}
+#second .profile p {
+  width: 100%;
+}
+.Arabic {
+  direction: rtl !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: unset !important;
+}
+#second .profile > div p {
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  margin: 0;
+}
+#second .profile > div i {
+  color: red;
+  margin-right: 10px;
+  animation: profile 0.3s linear 0s infinite alternate;
+}
+@keyframes profile {
+  from {
+    transform: translateX(3px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+#second .end {
+  width: 90%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.Job {
+  padding: 5% 0 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Job h2 {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Job .black {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3px;
+  width: 50%;
+  background-color: white;
+}
+.Job .black .red {
+  position: absolute;
+  width: 30%;
+  height: 6px;
+  background-color: red;
+  z-index: 5;
+}
+.Job .black,
+.Job .black .red {
+  border-radius: 20px;
+}
+.Job .categContainer {
+  margin: 10% 0 0%;
+}
+.Job .categ {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Job .categ .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.Job .categ img {
+  width: 100%;
+  transition: all 0.4s linear;
+}
+.Job .categ p,
+.Job .categ a {
+  font-size: 25px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.Job .categ a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+
+.Job #extension:hover a,
+.Job #roof:hover p {
+  transform: scale(1.5);
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.Job .categ .roof,
+.Job .categ a {
+  position: absolute;
+}
+.Job .categ .roof {
+  color: white;
+  transition: all 0.5s linear;
+}
+.Job .categ:hover img {
+  transform: scale(1.5);
+}
+
+#Home .module {
+  padding: 10% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Home .module h1 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#Home .module .black {
+  margin: 0 0 5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3px;
+  width: 50%;
+  background-color: black;
+}
+#Home .module .black .red {
+  position: absolute;
+  width: 30%;
+  height: 6px;
+  background-color: red;
+  z-index: 5;
+}
+#Home .module .black,
+#Home .module .black .red {
+  border-radius: 20px;
+}
+#Home .module .blockContainer {
+  margin: 5% 0;
+  padding: 10% 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Home .module .blockContainer .imageBackground {
+  position: absolute;
+  background-image: url("../../assets/Services/Services.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#Home .module .blockContainer .imageBackground .shadow {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+#Home .module .blockContainer .imageBackground img {
+  width: 100%;
+  height: 100%;
+}
+
+#Home .module .block {
+  border-radius: 10px;
+  z-index: 5;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 2% 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blockArab {
+  direction: rtl;
+}
+#Home .module .block > div {
+  text-align: center;
+
+  margin: 6% 0 4%;
+  color: black;
+}
+#Home .module .block > div i {
+  color: red;
+  font-size: 30px;
+}
+#Home .module .block > div h6 {
+  margin-top: 5%;
+  color: rgba(20, 20, 20, 0.5);
+}
+#Home .module .block p {
+  margin: 0;
+  margin-bottom: 4%;
+  font-size: 18px;
+  word-spacing: 0.7mm;
+  word-wrap: unset;
+  word-break: keep-all;
+}
+
+.building {
+  margin-bottom: 6%;
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.building h4 {
+  margin-bottom: 5%;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.building p,
+.building h6 {
+  margin: 0;
+}
+.building h6 {
+  margin: 2% 0;
+}
+.building .black {
+  margin: 0 0 10%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3px;
+  width: 50%;
+  background-color: black;
+}
+.building .black .red {
+  position: absolute;
+  width: 30%;
+  height: 6px;
+  background-color: red;
+  z-index: 5;
+}
+.building .black,
+.building .black .red {
+  border-radius: 20px;
+}
+.building > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.building > div > div {
+  text-align: center;
+}
+
+.building > div > div a {
+  text-decoration: none;
+}
+
+.building > div > div:nth-child(2) a .fa-place-of-worship {
+  font-size: 4em;
+}
+
+.building > div > div:nth-child(1) a .fa-place-of-worship,
+.building > div > div:nth-child(2) a .fa-place-of-worship,
+.building > div > div:nth-child(3) a .fa-place-of-worship {
+  color: rgb(54, 54, 54);
+}
+
+.building > div > div:nth-child(1) a .fa-place-of-worship,
+.building > div > div:nth-child(3) a .fa-place-of-worship {
+  font-size: 3em;
+}
+
+.building > div > div:nth-child(1) a h6,
+.building > div > div:nth-child(3) a h6 {
+  color: black !important;
+}
+
+.building > div > div:nth-child(2) a h6 {
+  color: black;
+}
+.building > div > div p {
+  color: rgba(255, 0, 0, 0.5);
+}
+.building > div > div:nth-child(2) > i {
+  font-size: 45px;
+}
+.building > div > div:nth-child(1) i,
+.building > div > div:nth-child(3) i {
+  font-size: 30px;
+}
+.building > div div p i {
+  font-size: 18px !important;
+  color: red;
+  animation: detailAnime 0.5s linear 0s infinite alternate;
+}
+@keyframes detailAnime {
+  from {
+    transform: translateX(3px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+#Home .Contact {
+  padding: 8% 0;
+  background-color: rgba(105, 105, 105, 0.19);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Home .Contact h4 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#Home .Contact .black {
+  margin: 0 0 8%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3px;
+  width: 50%;
+  background-color: black;
+}
+#Home .Contact .black .red {
+  position: absolute;
+  width: 30%;
+  height: 6px;
+  background-color: red;
+  z-index: 5;
+}
+#Home .Contact .black,
+#Home .Contact .black .red {
+  border-radius: 20px;
+}
+#Home .Contact form {
+  text-align: center;
+  width: 90%;
+}
+#Home .Contact form div > div {
+  margin: 4% 0;
+}
+#Home .Contact form label {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#Home .Contact form input {
+  outline: none;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  width: 65%;
+}
+#Home .Contact form textarea {
+  resize: unset;
+  border: none;
+  border-radius: 5px;
+  width: 65%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+#Home .Contact form button {
+  width: 90px;
+  margin: 5% 2%;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 1% 7%;
+}
+
+#Home .Contact form textarea,
+#Home .Contact form input {
+  font-size: 13px;
+  padding: 1% 3%;
+}
+#Home .Contact form .nameCont {
+  display: flex;
+  justify-content: space-between;
+}
+#Home .Contact form .mailCont,
+#Home .Contact form .nameCont > div {
+  display: flex;
+  justify-content: space-between;
+}
+#Home .Contact form .messageCont {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#Home .Contact form .call {
+  width: 90px;
+  background-color: white;
+  color: red;
+  padding: 1% 7%;
+  font-size: 16px;
+}
+
+#Home .loc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shadow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-instagram {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CoData {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100%;
+  padding: 2%;
+  background-color: white;
+}
+
+.CoData.row {
+  margin: 0 !important;
+}
+
+.CoData .col-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.CoData ul {
+  list-style: none;
+  padding-left: 10% !important;
+}
+
+.CoData h5 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.CoData .loca {
+  color: rgb(241, 141, 141);
+}
+
+.location {
+  padding-left: 3%;
+  font-size: 13px !important;
+  color: rgba(245, 102, 102, 0.6);
+}
+
+.CoData a li {
+  transition: all 0.5s ease-in-out;
+}
+
+.CoData a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.CoData a:hover {
+  cursor: pointer;
+}
+
+.CoData a li:hover {
+  color: red;
+}
+
+.CoData .link {
+  transition: all 0.35s ease-in-out !important;
+}
+
+.CoData .link:hover {
+  cursor: pointer;
+  color: red !important;
+}
+
+.CoData .text-dark {
+  transition: all 0.3s ease-in-out;
+}
+
+.CoData .contac:hover .text-dark {
+  color: red !important;
+}
+
+.row .fa-envelope {
+  font-size: 17px;
+  color: rgb(107, 107, 243);
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-square-snapchat {
+  color: #fffc00;
+}
+
+.icons {
+  width: 100%;
+}
+
+.icons i {
+  font-size: 25px;
+  margin: 0 2%;
+}

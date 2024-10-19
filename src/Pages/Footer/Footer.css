@@ -1,0 +1,17 @@
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 0.7% 0;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+footer span {
+  text-transform: capitalize;
+}

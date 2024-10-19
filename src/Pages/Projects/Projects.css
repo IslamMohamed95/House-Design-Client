@@ -1,0 +1,281 @@
+.Projects.row {
+  width: 100% !important;
+}
+
+.Projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh !important;
+  position: relative;
+}
+.Projects h1 {
+  margin: 10% 0 4%;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Projects .black {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3px;
+  width: 50%;
+  background-color: black;
+}
+.Projects .black .red {
+  position: absolute;
+
+  width: 30%;
+  height: 6px;
+  background-color: red;
+  z-index: 5;
+}
+.Projects .black,
+.Projects .black .red {
+  border-radius: 20px;
+}
+.Projects .filter {
+  margin: 15% 0 5%;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.Projects .filter button {
+  border: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 2%;
+  width: 100px;
+  transition: background-color 0.5s ease-in-out;
+}
+.activeFilter {
+  background-color: rgba(199, 0, 0, 0.7) !important;
+}
+.Dir {
+  direction: rtl;
+}
+
+footer {
+  position: absolute;
+}
+
+.Projects h5 {
+  width: 96%;
+  padding: 0 4%;
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.Projects h5:before {
+  position: absolute;
+  content: "";
+  left: 1%;
+  width: 3px;
+  border-radius: 20px;
+  height: 35%;
+  background-color: rgb(236, 158, 84);
+}
+
+.Projects .arabHeader {
+  padding: 7% 3% 0 3%;
+}
+
+.Projects .arabHeader::before {
+  position: absolute;
+  content: "";
+  right: 0.1% !important;
+  border-radius: 20px;
+  height: 35%;
+  background-color: rgb(236, 158, 84);
+}
+
+.Projects > p {
+  width: 90%;
+  margin: 2% 0;
+  border-radius: 20px;
+  padding: 3%;
+  background-color: rgba(207, 207, 207, 0.3);
+}
+
+.ProjCont {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2% 1%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.projHolder {
+  width: 100%;
+  margin: 0 1.5%;
+
+  padding: 0;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px -1px 7px 1px rgb(214, 214, 214);
+}
+
+.projHolder img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.projHolder > div {
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+}
+
+.projHolder p {
+  margin: 0;
+  opacity: 0;
+  color: rgb(123, 180, 255);
+  font-size: 15px;
+  transition: all 0.6s ease-in-out;
+}
+
+.projHolder p:hover {
+  cursor: pointer;
+}
+
+.projHolder i {
+  font-size: 30px;
+  opacity: 0;
+  color: white;
+  transition: all 0.6s ease;
+}
+
+.projHolder:hover i,
+.projHolder:hover p {
+  opacity: 1;
+}
+
+.ProjCont i:hover {
+  color: rgba(245, 39, 39, 0.7);
+}
+
+.projHolder::before,
+.projHolder::after {
+  position: absolute;
+  content: "";
+  top: 0;
+
+  height: 100%;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: width 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.projHolder::before {
+  left: 0;
+}
+.projHolder::after {
+  right: 0;
+}
+
+.projHolder:hover::before,
+.projHolder:hover::after {
+  width: 50%;
+}
+
+.ProjData {
+  position: fixed;
+
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+
+.activeProj {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ProjData > div:first-child {
+  width: 800px;
+}
+
+.fa-heart {
+  font-size: 30px;
+  color: rgba(245, 39, 39, 0.7);
+
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-heart:hover {
+  text-shadow: 1px 1px 2px rgb(248, 122, 122);
+}
+
+.ProjData img {
+  outline-offset: -25px;
+  outline: 10px double white;
+}
+
+.ProjData > div {
+  position: relative;
+}
+
+.Projects .fa-xmark {
+  position: absolute;
+  top: -3%;
+  right: -2.5%;
+  z-index: 2;
+  font-size: 25px;
+  color: red;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.7% 1.5%;
+}
+
+.fa-xmark:hover {
+  cursor: pointer;
+}
+
+.imgData {
+  background-color: white;
+  padding: 3% 1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.imgData ul {
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}

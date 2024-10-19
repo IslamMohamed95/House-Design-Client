@@ -1,0 +1,61 @@
+#Designs {
+  overflow: hidden;
+  position: relative;
+  padding-top: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Designs .black {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3px;
+  width: 50%;
+  background-color: black;
+}
+#Designs .black .red {
+  position: absolute;
+
+  width: 30%;
+  height: 6px;
+  background-color: red;
+  z-index: 5;
+}
+#Designs .black,
+#Designs .black .red {
+  border-radius: 20px;
+}
+#Designs h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#Designs h4 {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0%;
+  font-size: 15px;
+  margin: 2% 0 8% 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#Designs .row {
+  display: flex;
+
+  justify-content: center;
+  align-items: center !important;
+}
+
+#Designs img {
+  margin-bottom: 4% !important;
+}
+
+#Designs img:last-child {
+  margin-bottom: 20% !important;
+}
