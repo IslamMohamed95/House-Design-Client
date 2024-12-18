@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Carousel from "react-bootstrap/Carousel";
 import uniqid from "uniqid";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "../Projects/Projects.css";

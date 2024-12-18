@@ -4,8 +4,9 @@ const client = axios.create({
   baseURL: "http://localhost:3000/",
 });
 
-export default {
+const http = {
   post: axios.post,
   get: axios.get,
   client,
 };
+export default http;
