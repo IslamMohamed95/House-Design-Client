@@ -124,12 +124,12 @@ function Login({
         <h2 className="d-flex d-md-none d-lg-flex">{t("Login.title")}</h2>
         {t("NavBar.lang") === "Arabic" ? (
           <h2 className="lastHeader d-flex d-md-none d-lg-flex">
-            {t("Login.title2")}
+            {t("Login.title")}
           </h2>
         ) : (
           ""
         )}
-        <h2 className="d-md-flex d-none d-lg-none">{t("Login.title3")}</h2>
+        <h2 className="d-md-flex d-none d-lg-none">{t("Login.title")}</h2>
         <p>{t("Login.para")}</p>
         <form onSubmit={handleLogin}>
           <div>

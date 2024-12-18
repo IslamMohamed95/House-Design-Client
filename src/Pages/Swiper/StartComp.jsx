@@ -14,8 +14,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "./StartComp.css";
 import "swiper/css";
-import "swiper/css/effect-cube";
-import { EffectCube, Pagination, Navigation, Autoplay } from "swiper";
+import "swiper/css/bundle";
+import { EffectCube, Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const StartComp = ({ width }) => {
   return (
