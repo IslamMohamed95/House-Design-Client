@@ -306,7 +306,7 @@ function App() {
                     }
                   />
                 </React.Fragment>
-                : window.location.href.includes(
+                ) : window.location.href.includes(
                 "http://localhost:3001/dashboard" ) ? (
                 <Route
                   path="/dashboard"

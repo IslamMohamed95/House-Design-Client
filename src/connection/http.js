@@ -1,12 +1,11 @@
 import axios from "axios";
 
 const client = axios.create({
-  baseURL: "https://construction-company-server.onrender.com/",
+  baseURL: "http://localhost:3000/",
 });
 
-const http = {
+export default {
   post: axios.post,
   get: axios.get,
   client,
 };
-export default http;
