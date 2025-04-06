@@ -90,15 +90,9 @@ function App() {
     setLoading(true);
     fetchData();
     if (
-      window.location.href.includes(
-        "https://construction-company-server.onrender.com/login"
-      ) ||
-      window.location.href.includes(
-        "https://construction-company-server.onrender.com/board"
-      ) ||
-      window.location.href.includes(
-        "https://construction-company-server.onrender.com/dashboard"
-      )
+      window.location.href.includes("https://housed.vercel.app/login") ||
+      window.location.href.includes("https://housed.vercel.app/board") ||
+      window.location.href.includes("https://housed.vercel.app/dashboard")
     ) {
       setLogin(true);
       setSkip(true);
@@ -130,7 +124,7 @@ function App() {
         ) : (
           <Router>
             {window.location.href.includes(
-              "https://construction-company-server.onrender.com/board"
+              "https://housed.vercel.app/board"
             ) ? (
               <DashNav setExit={setExit} />
             ) : (
@@ -315,8 +309,7 @@ function App() {
                   />
                 </React.Fragment>
                 ) : window.location.href.includes(
-                "https://construction-company-server.onrender.com/dashboard" ) ?
-                (
+                "https://housed.vercel.app/dashboard" ) ? (
                 <Route
                   path="/dashboard"
                   element={
