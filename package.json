@@ -15,7 +15,7 @@
     "aos": "^2.3.4",
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
-    "chart.js": "^4.2.0",
+    "chart.js": "^3.9.1",
     "date-fns": "^2.29.3",
     "file-saver": "^2.0.5",
     "formdata": "^0.10.4",
