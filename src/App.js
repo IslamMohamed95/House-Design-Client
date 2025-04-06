@@ -90,9 +90,15 @@ function App() {
     setLoading(true);
     fetchData();
     if (
-      window.location.href.includes("http://localhost:3001/login") ||
-      window.location.href.includes("http://localhost:3001/board") ||
-      window.location.href.includes("http://localhost:3001/dashboard")
+      window.location.href.includes(
+        "https://construction-company-server.onrender.com/login"
+      ) ||
+      window.location.href.includes(
+        "https://construction-company-server.onrender.com/board"
+      ) ||
+      window.location.href.includes(
+        "https://construction-company-server.onrender.com/dashboard"
+      )
     ) {
       setLogin(true);
       setSkip(true);
@@ -123,7 +129,9 @@ function App() {
           </div>
         ) : (
           <Router>
-            {window.location.href.includes("http://localhost:3001/board") ? (
+            {window.location.href.includes(
+              "https://construction-company-server.onrender.com/board"
+            ) ? (
               <DashNav setExit={setExit} />
             ) : (
               <React.Fragment>
@@ -307,7 +315,8 @@ function App() {
                   />
                 </React.Fragment>
                 ) : window.location.href.includes(
-                "http://localhost:3001/dashboard" ) ? (
+                "https://construction-company-server.onrender.com/dashboard" ) ?
+                (
                 <Route
                   path="/dashboard"
                   element={
